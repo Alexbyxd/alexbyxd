@@ -1,0 +1,11 @@
+{
+  "title": "Language Stack",
+  "_comment": "Values 0-100.",
+  "axes": [
+    { "label": "TypeScript", "value": 90 },
+    { "label": "Python", "value": 82 },
+    { "label": "PHP", "value": 80 },
+    { "label": "Dart", "value": 75 },
+    { "label": "SQL", "value": 88 }
+  ]
+}

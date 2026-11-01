@@ -1,0 +1,12 @@
+{
+  "title": "Full Stack Skill Radar",
+  "_comment": "Self-rated, 0-100.",
+  "axes": [
+    { "label": "Frontend", "value": 88 },
+    { "label": "Backend APIs", "value": 92 },
+    { "label": "Databases", "value": 85 },
+    { "label": "Mobile (Flutter)", "value": 78 },
+    { "label": "DevOps & Cloud", "value": 55 },
+    { "label": "System Design", "value": 80 }
+  ]
+}
