@@ -1,18 +1,19 @@
 <div align="center">
 
-<!-- BANNER: vim profile.yml — synthwave -->
+<!-- BANNER: vim profile.yml with animated particle morphing -->
 <a href="https://github.com/Alexbyxd">
   <picture>
     <source media="(prefers-color-scheme: dark)"  srcset="assets/banner-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="assets/banner-dark.svg">
-    <img src="assets/banner-dark.svg" width="960" alt="Alex Baltazar Castellon — Full Stack Developer profile">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
+    <img src="assets/banner-dark.svg" width="960" alt="Alex Baltazar Castellon — Live System Profile">
   </picture>
 </a>
 
 <br>
 
+<!-- CONSOLE RETRO TYPING SVG -->
 <a href="https://github.com/Alexbyxd">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=900&color=F72585&center=true&vCenter=true&width=900&lines=Alex+Baltazar+Castellon+%E2%80%94+Full+Stack+Dev;Next.js+%7C+NestJS+%7C+Laravel+%7C+Django+%7C+Flutter;PostgreSQL+%C2%B7+Docker+%C2%B7+Containers+%C2%B7+APIs;Bolivia+%F0%9F%87%A7%F0%9F%87%B4+%C2%B7+Always+shipping+something+%E2%9A%A1" alt="Typing banner">
+  <img src="https://readme-typing-svg.demolab.com?font=VT323&weight=700&size=28&duration=2800&pause=900&color=F72585&center=true&vCenter=true&width=900&lines=alex%40dev%3A~%24+whoami+--role+%22Full+Stack+Developer%22%3Balex%40dev%3A~%24+stack+--get+%22Next.js+%C2%B7+NestJS+%C2%B7+Laravel+%C2%B7+Flutter%22%3Balex%40dev%3A~%24+deploy+--target+%22Cloud+%26+DevOps+(AWS+%2F+GCP)%22%3Balex%40dev%3A~%24+echo+%22Always+shipping+from+Bolivia+%F0%9F%87%A7%F0%9F%87%B4%22" alt="Retro terminal typing console">
 </a>
 
 <img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=f72585&label=profile+views" alt="profile views">
@@ -33,50 +34,10 @@
 
 ## `$ cat tech-stack.yaml`
 
-<table border="1" cellpadding="14" bgcolor="#1a0a2e">
-  <thead>
-    <tr>
-      <th colspan="2" align="left"><code>alexbyxd:~$ cat tech-stack.yaml</code></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td width="50%" valign="top"><code>├─ ✦ frontend:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=nextjs,react,ts,js,tailwind" alt="Next.js, React, TypeScript, JavaScript, Tailwind"><br>
-        <sub><code>Next.js · React · TypeScript · JavaScript · Tailwind</code></sub>
-      </td>
-      <td width="50%" valign="top"><code>├─ 📱 mobile:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=flutter,dart" alt="Flutter, Dart"><br>
-        <sub><code>Flutter · Dart</code></sub>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><code>├─ ⚙ backend:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=nestjs,laravel,django,nodejs,python,php" alt="NestJS, Laravel, Django, Node.js, Python, PHP"><br>
-        <sub><code>NestJS · Laravel · Django · Node.js · Python · PHP</code></sub>
-      </td>
-      <td valign="top"><code>├─ ▣ databases:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=postgres,mysql,mongodb,redis" alt="PostgreSQL, MySQL, MongoDB, Redis"><br>
-        <sub><code>PostgreSQL · MySQL · MongoDB · Redis</code></sub>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><code>├─ 🐳 containers_devops:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=docker,githubactions,git,linux,bash" alt="Docker, GitHub Actions, Git, Linux, Bash"><br>
-        <sub><code>Docker · GitHub Actions · Git · Linux · Bash</code></sub>
-      </td>
-      <td valign="top"><code>╰─ ☁ currently_learning:</code><br><br>
-        <img src="https://skillicons.dev/icons?i=aws,gcp,kubernetes,terraform" alt="AWS, GCP, Kubernetes, Terraform"><br>
-        <sub><code>AWS · GCP · Kubernetes · Terraform</code></sub>
-      </td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td colspan="2"><code>status: ready&nbsp;&nbsp;·&nbsp;&nbsp;environment: production&nbsp;&nbsp;·&nbsp;&nbsp;location: Bolivia 🇧🇴</code></td>
-    </tr>
-  </tfoot>
-</table>
+<!-- ANIMATED SYNTHWAVE TECH STACK -->
+<p align="center">
+  <img src="assets/tech-stack.svg" width="960" alt="Synthwave Animated Tech Stack">
+</p>
 
 </div>
 
@@ -101,12 +62,12 @@
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=10002b&title_color=f72585&icon_color=b44fff&text_color=e0aaff&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=10002b&title_color=f72585&text_color=e0aaff&langs_count=8" alt="Top Languages">
+<img height="160" src="https://github-stats-extended.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=10002b&title_color=f72585&icon_color=4cc9f0&text_color=e0aaff&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
+<img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=10002b&title_color=f72585&text_color=e0aaff&langs_count=8" alt="Top Languages">
 
 <br>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=alexbyxd&theme=dark&hide_border=true&background=10002b&ring=f72585&fire=b44fff&currStreakLabel=f72585&sideLabels=6b5b8e&dates=6b5b8e" alt="GitHub Streak">
+<img src="https://streak-stats.demolab.com?user=alexbyxd&theme=dark&hide_border=true&background=10002b&ring=f72585&fire=4cc9f0&currStreakLabel=f72585&sideLabels=8f7aa8&dates=8f7aa8" alt="GitHub Streak">
 
 </div>
 
@@ -127,7 +88,7 @@
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
 </a>&nbsp;&nbsp;
 <a href="https://github.com/Alexbyxd">
-  <img src="https://img.shields.io/badge/GitHub-b44fff?style=for-the-badge&logo=github&logoColor=10002b" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-4cc9f0?style=for-the-badge&logo=github&logoColor=10002b" alt="GitHub">
 </a>
 
 </div>

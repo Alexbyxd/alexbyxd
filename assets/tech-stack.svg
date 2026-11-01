@@ -1,0 +1,267 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="960" height="480" role="img" aria-labelledby="title desc">
+  <title id="title">Tech Stack — Alex Baltazar Castellon</title>
+  <desc id="desc">Synthwave animated tech stack card with modern neon aesthetics.</desc>
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="neonBorder" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f72585"/>
+      <stop offset="50%" stop-color="#7209b7"/>
+      <stop offset="100%" stop-color="#4cc9f0"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1e0b38"/>
+      <stop offset="100%" stop-color="#140727"/>
+    </linearGradient>
+    <linearGradient id="scanGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#4cc9f0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f72585" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#4cc9f0" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glowPink" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#f72585" flood-opacity="0.6"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#4cc9f0" flood-opacity="0.6"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="b"/>
+      <feFlood flood-color="#b44fff" flood-opacity="0.5"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
+    .badge { rx: 5px; stroke-width: 1; transition: all 0.3s; }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.85; }
+      50% { opacity: 1; filter: drop-shadow(0 0 6px #f72585); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-480px); }
+      100% { transform: translateY(480px); }
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .pulsing-border {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+    .cursor-blink {
+      animation: blink 1.1s infinite;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="960" height="480" rx="16" fill="#0d001a"/>
+  <rect x="8" y="8" width="944" height="464" rx="12" fill="#140628" stroke="url(#neonBorder)" stroke-width="2" class="pulsing-border"/>
+
+  <!-- Scanning beam effect -->
+  <g opacity="0.6">
+    <rect x="8" y="58" width="944" height="30" fill="url(#scanGrad)">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,380; 0,0" dur="8s" repeatCount="indefinite" ease="linear"/>
+    </rect>
+  </g>
+
+  <!-- Terminal Top Bar -->
+  <path d="M8 58H952" stroke="#3a0ca3" stroke-width="1.5"/>
+  <circle cx="34" cy="33" r="5.5" fill="#FF5F57"/>
+  <circle cx="53" cy="33" r="5.5" fill="#FEBC2E"/>
+  <circle cx="72" cy="33" r="5.5" fill="#28C840"/>
+
+  <text x="100" y="38" fill="#a08cb6" class="mono" font-size="14">alexbyxd@dev  ·  stack-inspector  ·  active</text>
+  <rect x="825" y="22" width="105" height="22" rx="4" fill="#3a0ca3" opacity="0.6"/>
+  <text x="877" y="37" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11" font-weight="700">v2.4.0 [PROD]</text>
+
+  <!-- Header Prompt -->
+  <text x="35" y="88" fill="#4cc9f0" class="mono" font-size="16" font-weight="700">alex@dev:~$</text>
+  <text x="155" y="88" fill="#e0aaff" class="mono" font-size="16">cat</text>
+  <text x="190" y="88" fill="#f72585" class="mono" font-size="16" font-weight="700" filter="url(#glowPink)">tech-stack.yaml</text>
+  <rect x="330" y="74" width="8" height="17" fill="#4cc9f0" class="cursor-blink"/>
+
+  <!-- ══════════ CARDS GRID ══════════ -->
+
+  <!-- Card 1: Frontend & UI -->
+  <g transform="translate(35, 110)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#4cc9f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#4cc9f0" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#4cc9f0" class="mono" font-size="13" font-weight="700">✦ FRONTEND &amp; UI</text>
+
+    <!-- Badges -->
+    <!-- Next.js -->
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#1b003a" stroke="#f72585"/>
+    <text x="52" y="59" text-anchor="middle" fill="#ffffff" class="mono" font-size="11" font-weight="600">Next.js</text>
+
+    <!-- React -->
+    <rect x="98" y="42" width="70" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="133" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11" font-weight="600">React</text>
+
+    <!-- TypeScript -->
+    <rect x="176" y="42" width="90" height="26" rx="4" fill="#1b003a" stroke="#b44fff"/>
+    <text x="221" y="59" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11" font-weight="600">TypeScript</text>
+
+    <!-- Tailwind -->
+    <rect x="14" y="78" width="86" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="57" y="95" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11">TailwindCSS</text>
+
+    <!-- JavaScript -->
+    <rect x="108" y="78" width="86" height="26" rx="4" fill="#1b003a" stroke="#ffe66d"/>
+    <text x="151" y="95" text-anchor="middle" fill="#ffe66d" class="mono" font-size="11">JavaScript</text>
+
+    <text x="14" y="132" fill="#8f7aa8" class="mono" font-size="11">Architecture: SSR · Component-First</text>
+  </g>
+
+  <!-- Card 2: Backend APIs -->
+  <g transform="translate(340, 110)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#f72585" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#f72585" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#f72585" class="mono" font-size="13" font-weight="700">⚙ BACKEND ENGINES</text>
+
+    <!-- NestJS -->
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#1b003a" stroke="#f72585"/>
+    <text x="52" y="59" text-anchor="middle" fill="#f72585" class="mono" font-size="11" font-weight="700">NestJS</text>
+
+    <!-- Laravel -->
+    <rect x="98" y="42" width="76" height="26" rx="4" fill="#1b003a" stroke="#ff5f57"/>
+    <text x="136" y="59" text-anchor="middle" fill="#ff7070" class="mono" font-size="11">Laravel</text>
+
+    <!-- Django -->
+    <rect x="182" y="42" width="76" height="26" rx="4" fill="#1b003a" stroke="#28c840"/>
+    <text x="220" y="59" text-anchor="middle" fill="#75dca0" class="mono" font-size="11">Django</text>
+
+    <!-- Python -->
+    <rect x="14" y="78" width="76" height="26" rx="4" fill="#1b003a" stroke="#ffe66d"/>
+    <text x="52" y="95" text-anchor="middle" fill="#ffe66d" class="mono" font-size="11">Python</text>
+
+    <!-- PHP -->
+    <rect x="98" y="78" width="60" height="26" rx="4" fill="#1b003a" stroke="#b44fff"/>
+    <text x="128" y="95" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11">PHP</text>
+
+    <!-- Node.js -->
+    <rect x="166" y="78" width="76" height="26" rx="4" fill="#1b003a" stroke="#28c840"/>
+    <text x="204" y="95" text-anchor="middle" fill="#75dca0" class="mono" font-size="11">Node.js</text>
+
+    <text x="14" y="132" fill="#8f7aa8" class="mono" font-size="11">Focus: Clean Hexagonal · REST/WS</text>
+  </g>
+
+  <!-- Card 3: Mobile & Cross-Platform -->
+  <g transform="translate(645, 110)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#b44fff" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#b44fff" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#b44fff" class="mono" font-size="13" font-weight="700">📱 MOBILE APPS</text>
+
+    <!-- Flutter -->
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="52" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11" font-weight="700">Flutter</text>
+
+    <!-- Dart -->
+    <rect x="98" y="42" width="60" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="128" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11">Dart</text>
+
+    <!-- Android / iOS target -->
+    <rect x="14" y="78" width="105" height="26" rx="4" fill="#1b003a" stroke="#b44fff"/>
+    <text x="66" y="95" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11">Android &amp; iOS</text>
+
+    <text x="14" y="132" fill="#8f7aa8" class="mono" font-size="11">State: Bloc · Provider · Native Sync</text>
+  </g>
+
+  <!-- Card 4: Databases -->
+  <g transform="translate(35, 280)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#ffe66d" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#ffe66d" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#ffe66d" class="mono" font-size="13" font-weight="700">▣ DATA &amp; STORAGE</text>
+
+    <!-- PostgreSQL -->
+    <rect x="14" y="42" width="94" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="61" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11" font-weight="700">PostgreSQL</text>
+
+    <!-- MySQL -->
+    <rect x="116" y="42" width="70" height="26" rx="4" fill="#1b003a" stroke="#ffe66d"/>
+    <text x="151" y="59" text-anchor="middle" fill="#ffe66d" class="mono" font-size="11">MySQL</text>
+
+    <!-- MongoDB -->
+    <rect x="194" y="42" width="74" height="26" rx="4" fill="#1b003a" stroke="#28c840"/>
+    <text x="231" y="59" text-anchor="middle" fill="#75dca0" class="mono" font-size="11">MongoDB</text>
+
+    <!-- Redis -->
+    <rect x="14" y="78" width="68" height="26" rx="4" fill="#1b003a" stroke="#ff5f57"/>
+    <text x="48" y="95" text-anchor="middle" fill="#ff7070" class="mono" font-size="11">Redis</text>
+
+    <!-- SQL Tuning -->
+    <rect x="90" y="78" width="115" height="26" rx="4" fill="#1b003a" stroke="#e0aaff"/>
+    <text x="147" y="95" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11">SQL Tuning &amp; ORM</text>
+
+    <text x="14" y="132" fill="#8f7aa8" class="mono" font-size="11">Schema Design · Index Optimization</text>
+  </g>
+
+  <!-- Card 5: Containers & DevOps -->
+  <g transform="translate(340, 280)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#4cc9f0" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#4cc9f0" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#4cc9f0" class="mono" font-size="13" font-weight="700">🐳 CONTAINERS &amp; CI/CD</text>
+
+    <!-- Docker -->
+    <rect x="14" y="42" width="70" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="49" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11" font-weight="700">Docker</text>
+
+    <!-- GitHub Actions -->
+    <rect x="92" y="42" width="110" height="26" rx="4" fill="#1b003a" stroke="#b44fff"/>
+    <text x="147" y="59" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11">GitHub Actions</text>
+
+    <!-- Linux / Bash -->
+    <rect x="14" y="78" width="60" height="26" rx="4" fill="#1b003a" stroke="#ffe66d"/>
+    <text x="44" y="95" text-anchor="middle" fill="#ffe66d" class="mono" font-size="11">Linux</text>
+
+    <!-- Sentry -->
+    <rect x="82" y="78" width="76" height="26" rx="4" fill="#1b003a" stroke="#f72585"/>
+    <text x="120" y="95" text-anchor="middle" fill="#f72585" class="mono" font-size="11">Sentry</text>
+
+    <!-- Git -->
+    <rect x="166" y="78" width="55" height="26" rx="4" fill="#1b003a" stroke="#ff7070"/>
+    <text x="193" y="95" text-anchor="middle" fill="#ff7070" class="mono" font-size="11">Git</text>
+
+    <text x="14" y="132" fill="#8f7aa8" class="mono" font-size="11">Multi-stage builds · Telemetry</text>
+  </g>
+
+  <!-- Card 6: Learning Cloud -->
+  <g transform="translate(645, 280)">
+    <rect width="280" height="150" rx="8" fill="url(#cardGrad)" stroke="#f72585" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#f72585" fill-opacity="0.12"/>
+    <text x="14" y="21" fill="#f72585" class="mono" font-size="13" font-weight="700">☁ LEARNING &amp; CLOUD</text>
+
+    <!-- AWS -->
+    <rect x="14" y="42" width="60" height="26" rx="4" fill="#1b003a" stroke="#ffe66d"/>
+    <text x="44" y="59" text-anchor="middle" fill="#ffe66d" class="mono" font-size="11">AWS</text>
+
+    <!-- GCP -->
+    <rect x="82" y="42" width="60" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="112" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11">GCP</text>
+
+    <!-- Kubernetes -->
+    <rect x="150" y="42" width="94" height="26" rx="4" fill="#1b003a" stroke="#4cc9f0"/>
+    <text x="197" y="59" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="11">Kubernetes</text>
+
+    <!-- Terraform -->
+    <rect x="14" y="78" width="86" height="26" rx="4" fill="#1b003a" stroke="#b44fff"/>
+    <text x="57" y="95" text-anchor="middle" fill="#e0aaff" class="mono" font-size="11">Terraform</text>
+
+    <!-- Ansible -->
+    <rect x="108" y="78" width="76" height="26" rx="4" fill="#1b003a" stroke="#f72585"/>
+    <text x="146" y="95" text-anchor="middle" fill="#f72585" class="mono" font-size="11">Ansible</text>
+
+    <text x="14" y="132" fill="#f72585" class="mono" font-size="11" font-weight="600">⚡ Goal: Cloud Native &amp; IaC</text>
+  </g>
+
+  <!-- Footer Telemetry -->
+  <text x="35" y="458" fill="#6b5b8e" class="mono" font-size="11">pipeline: READY  ·  security_scan: PASSED  ·  runtime: PRODUCTION  ·  zone: BOLIVIA-UTC-4</text>
+</svg>
