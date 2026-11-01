@@ -9,12 +9,14 @@
   </picture>
 </a>
 
-<br>
+<br><br>
 
-<!-- CONSOLE RETRO TYPING SVG -->
+<!-- STARSHIP INTERACTIVE TERMINAL COMPONENT -->
 <a href="https://github.com/Alexbyxd">
-  <img src="https://readme-typing-svg.demolab.com?font=VT323&weight=700&size=28&duration=2800&pause=900&color=F72585&center=true&vCenter=true&width=900&lines=alex%40dev%3A~%24+whoami+--role+%22Full+Stack+Developer%22%3Balex%40dev%3A~%24+stack+--get+%22Next.js+%C2%B7+NestJS+%C2%B7+Laravel+%C2%B7+Flutter%22%3Balex%40dev%3A~%24+deploy+--target+%22Cloud+%26+DevOps+(AWS+%2F+GCP)%22%3Balex%40dev%3A~%24+echo+%22Always+shipping+from+Bolivia+%F0%9F%87%A7%F0%9F%87%B4%22" alt="Retro terminal typing console">
+  <img src="assets/terminal.svg" width="960" alt="Starship Terminal Session — alex@dev">
 </a>
+
+<br>
 
 <img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=f72585&label=profile+views" alt="profile views">
 

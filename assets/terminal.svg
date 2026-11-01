@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360" role="img" aria-labelledby="termTitle termDesc">
+  <title id="termTitle">Starship Terminal Session — alex@dev</title>
+  <desc id="termDesc">Realistic Starship terminal prompt with command execution and persistent shell segments.</desc>
+
+  <defs>
+    <!-- Window Drop Shadow -->
+    <filter id="winShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#04000a" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Neon Glows -->
+    <filter id="pinkGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cyanGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- Clip path to animate typing of the command -->
+    <clipPath id="typingClip">
+      <rect x="0" y="0" width="0" height="30">
+        <animate attributeName="width" 
+          values="0; 0; 260; 260; 260; 0" 
+          keyTimes="0; 0.08; 0.28; 0.92; 0.98; 1" 
+          dur="9s" 
+          repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .bold { font-weight: 700; }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .cursor-1 {
+      animation: blink 0.8s infinite;
+    }
+    .cursor-2 {
+      animation: blink 0.9s infinite;
+    }
+  </style>
+
+  <!-- ══════════ WINDOW CONTAINER ══════════ -->
+  <rect x="10" y="10" width="940" height="340" rx="12" fill="#0d021a" stroke="#3a0ca3" stroke-width="1.5" filter="url(#winShadow)"/>
+
+  <!-- Top Title Bar -->
+  <path d="M10 46H950" stroke="#2a0845" stroke-width="1"/>
+  <rect x="10" y="10" width="940" height="36" rx="12" fill="#16052b"/>
+  <rect x="10" y="32" width="940" height="14" fill="#16052b"/>
+
+  <!-- Window Buttons -->
+  <circle cx="34" cy="28" r="6" fill="#FF5F57"/>
+  <circle cx="54" cy="28" r="6" fill="#FEBC2E"/>
+  <circle cx="74" cy="28" r="6" fill="#28C840"/>
+
+  <!-- Center Tab Title -->
+  <g transform="translate(480, 29)">
+    <text text-anchor="middle" fill="#8f7aa8" class="mono" font-size="12">alex@dev: ~/workspace — zsh (starship)</text>
+  </g>
+
+  <!-- Shell Environment Indicators Right -->
+  <rect x="850" y="19" width="80" height="18" rx="4" fill="#2a0845"/>
+  <text x="890" y="32" text-anchor="middle" fill="#4cc9f0" class="mono" font-size="10" font-weight="700">󰌠 NODE 20</text>
+
+  <!-- ══════════ TERMINAL BODY ══════════ -->
+
+  <!-- ── LINE 1: PERSISTENT STARSHIP PROMPT ── -->
+  <g transform="translate(30, 68)">
+    <!-- Segment 1: User / Host -->
+    <rect x="0" y="0" width="85" height="24" rx="4" fill="#7209b7"/>
+    <rect x="81" y="0" width="4" height="24" fill="#7209b7"/>
+    <text x="10" y="16" fill="#ffffff" class="mono bold" font-size="12">⚡ alex</text>
+    <polygon points="85,0 97,12 85,24" fill="#7209b7"/>
+
+    <!-- Segment 2: Directory Path -->
+    <rect x="97" y="0" width="125" height="24" fill="#3a0ca3"/>
+    <text x="107" y="16" fill="#e0aaff" class="mono bold" font-size="12">📁 ~/workspace</text>
+    <polygon points="222,0 234,12 222,24" fill="#3a0ca3"/>
+
+    <!-- Segment 3: Git Branch -->
+    <rect x="234" y="0" width="95" height="24" fill="#4cc9f0"/>
+    <text x="244" y="16" fill="#0d021a" class="mono bold" font-size="12"> main [!]</text>
+    <polygon points="329,0 341,12 329,24" fill="#4cc9f0"/>
+
+    <!-- Prompt Character -->
+    <text x="352" y="17" fill="#f72585" class="mono bold" font-size="15" filter="url(#pinkGlow)">❯</text>
+
+    <!-- Command Typed in real-time -->
+    <g transform="translate(372, 0)">
+      <g clip-path="url(#typingClip)">
+        <text x="0" y="17" fill="#ffffff" class="mono bold" font-size="14">fastfetch --config profile</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ── LINE 2: SYSTEM OUTPUT (Appears after command execution) ── -->
+  <g transform="translate(50, 108)">
+    <animate attributeName="opacity" 
+      values="0; 0; 1; 1; 1; 0" 
+      keyTimes="0; 0.28; 0.34; 0.92; 0.98; 1" 
+      dur="9s" 
+      repeatCount="indefinite"/>
+
+    <!-- Output Box Container -->
+    <rect x="0" y="0" width="860" height="135" rx="6" fill="#140626" stroke="#3a0ca3" stroke-width="1"/>
+
+    <!-- Output Left Column: Host Details -->
+    <text x="25" y="28" fill="#4cc9f0" class="mono bold" font-size="13">user@alexbyxd</text>
+    <text x="25" y="44" fill="#8f7aa8" class="mono" font-size="11">─────────────</text>
+
+    <text x="25" y="66" fill="#f72585" class="mono bold" font-size="12">OS      :</text>
+    <text x="110" y="66" fill="#e0aaff" class="mono" font-size="12">Linux x86_64 · Bolivia 🇧🇴</text>
+
+    <text x="25" y="86" fill="#f72585" class="mono bold" font-size="12">Role    :</text>
+    <text x="110" y="86" fill="#ffe66d" class="mono" font-size="12">Full Stack Developer</text>
+
+    <text x="25" y="106" fill="#f72585" class="mono bold" font-size="12">Core    :</text>
+    <text x="110" y="106" fill="#ffffff" class="mono" font-size="12">Next.js · NestJS · Laravel · Flutter · Docker</text>
+
+    <text x="25" y="124" fill="#f72585" class="mono bold" font-size="12">Status  :</text>
+    <text x="110" y="124" fill="#4cc9f0" class="mono" font-size="12">Always shipping something ⚡</text>
+
+    <!-- Output Right Column: System Badges -->
+    <line x1="560" y1="15" x2="560" y2="120" stroke="#2a0845" stroke-width="1"/>
+
+    <text x="580" y="32" fill="#8f7aa8" class="mono bold" font-size="11">STACK SIGNALS</text>
+
+    <rect x="580" y="44" width="75" height="20" rx="3" fill="#f72585" fill-opacity="0.2" stroke="#f72585"/>
+    <text x="617" y="58" text-anchor="middle" fill="#f72585" class="mono bold" font-size="11">Next.js</text>
+
+    <rect x="665" y="44" width="75" height="20" rx="3" fill="#4cc9f0" fill-opacity="0.2" stroke="#4cc9f0"/>
+    <text x="702" y="58" text-anchor="middle" fill="#4cc9f0" class="mono bold" font-size="11">NestJS</text>
+
+    <rect x="750" y="44" width="75" height="20" rx="3" fill="#ffe66d" fill-opacity="0.2" stroke="#ffe66d"/>
+    <text x="787" y="58" text-anchor="middle" fill="#ffe66d" class="mono bold" font-size="11">Laravel</text>
+
+    <rect x="580" y="72" width="75" height="20" rx="3" fill="#b44fff" fill-opacity="0.2" stroke="#b44fff"/>
+    <text x="617" y="86" text-anchor="middle" fill="#e0aaff" class="mono bold" font-size="11">Docker</text>
+
+    <rect x="665" y="72" width="75" height="20" rx="3" fill="#4cc9f0" fill-opacity="0.2" stroke="#4cc9f0"/>
+    <text x="702" y="86" text-anchor="middle" fill="#4cc9f0" class="mono bold" font-size="11">Postgres</text>
+
+    <rect x="750" y="72" width="75" height="20" rx="3" fill="#28c840" fill-opacity="0.2" stroke="#28c840"/>
+    <text x="787" y="86" text-anchor="middle" fill="#75dca0" class="mono bold" font-size="11">Flutter</text>
+
+    <!-- Color palette bar like in fastfetch -->
+    <rect x="580" y="104" width="18" height="12" fill="#0d021a"/>
+    <rect x="602" y="104" width="18" height="12" fill="#7209b7"/>
+    <rect x="624" y="104" width="18" height="12" fill="#f72585"/>
+    <rect x="646" y="104" width="18" height="12" fill="#4361ee"/>
+    <rect x="668" y="104" width="18" height="12" fill="#4cc9f0"/>
+    <rect x="690" y="104" width="18" height="12" fill="#ffe66d"/>
+    <rect x="712" y="104" width="18" height="12" fill="#ffffff"/>
+  </g>
+
+  <!-- ── LINE 3: SECOND PERSISTENT PROMPT (Waiting for input with blinking cursor) ── -->
+  <g transform="translate(30, 268)">
+    <animate attributeName="opacity" 
+      values="0; 0; 1; 1; 1; 0" 
+      keyTimes="0; 0.34; 0.40; 0.92; 0.98; 1" 
+      dur="9s" 
+      repeatCount="indefinite"/>
+
+    <!-- Segment 1: User -->
+    <rect x="0" y="0" width="85" height="24" rx="4" fill="#7209b7"/>
+    <rect x="81" y="0" width="4" height="24" fill="#7209b7"/>
+    <text x="10" y="16" fill="#ffffff" class="mono bold" font-size="12">⚡ alex</text>
+    <polygon points="85,0 97,12 85,24" fill="#7209b7"/>
+
+    <!-- Segment 2: Directory Path -->
+    <rect x="97" y="0" width="125" height="24" fill="#3a0ca3"/>
+    <text x="107" y="16" fill="#e0aaff" class="mono bold" font-size="12">📁 ~/workspace</text>
+    <polygon points="222,0 234,12 222,24" fill="#3a0ca3"/>
+
+    <!-- Segment 3: Git Branch (clean) -->
+    <rect x="234" y="0" width="85" height="24" fill="#28c840"/>
+    <text x="244" y="16" fill="#0d021a" class="mono bold" font-size="12"> main</text>
+    <polygon points="319,0 331,12 319,24" fill="#28c840"/>
+
+    <!-- Prompt Character -->
+    <text x="342" y="17" fill="#4cc9f0" class="mono bold" font-size="15" filter="url(#cyanGlow)">❯</text>
+
+    <!-- Active Blinking Block Cursor -->
+    <rect x="362" y="3" width="9" height="18" fill="#4cc9f0" class="cursor-2"/>
+  </g>
+
+  <!-- Bottom Telemetry -->
+  <text x="35" y="338" fill="#6b5b8e" class="mono" font-size="10">zsh 5.9 (x86_64-pc-linux-gnu) · starship 1.18 · UTF-8</text>
+</svg>

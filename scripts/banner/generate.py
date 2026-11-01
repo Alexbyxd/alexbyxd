@@ -27,7 +27,7 @@ TRAVELLER_COUNT = 900
 HOLD_PARTICLE_COUNT = 2_200
 SEED = 42
 LOGO_SUFFIXES = {".png", ".webp"}
-PREFERRED_LOGO_ORDER = ("docker", "react", "python", "postgresql")
+PREFERRED_LOGO_ORDER = ("docker", "nextdotjs", "nestjs", "laravel")
 
 YAML_ROWS = [
     (0, "profile", ""),
@@ -299,7 +299,7 @@ def render_svg(
     parts.extend([
         f'<text x="58" y="551" fill="{t["muted"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="10">'
-        f'PARTICLES {n} · DOCKER ⇄ REACT ⇄ PYTHON ⇄ POSTGRESQL</text>',
+        f'PARTICLES {n} · DOCKER ⇄ NEXT.JS ⇄ NESTJS ⇄ LARAVEL</text>',
 
         # Right Panel (Vim Editor)
         f'<rect x="474" y="88" width="672" height="472" rx="6" fill="{t["panel2"]}" '
