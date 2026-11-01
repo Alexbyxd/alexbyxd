@@ -1,0 +1,56 @@
+name: Update Charts & Radar Signals
+
+on:
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'assets/skills.json'
+      - 'assets/langmix.json'
+      - 'scripts/**'
+      - '.github/workflows/charts.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  redraw-charts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Redraw Skill & Language Radars
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 1. Redraw Full Stack Skill Radar
+          python3 scripts/radar.py --data assets/skills.json -o assets/radar --values
+
+          # 2. Redraw Live Language Radar from public repos
+          python3 scripts/radar.py --github Alexbyxd \
+            --exclude "html,css,scss,less,shell,makefile,dockerfile,batchfile,blade" \
+            -o assets/radar-langs --values
+
+      - name: Commit and Push Updated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/radar*.svg
+          if git diff --staged --quiet; then
+            echo "No changes in radar charts."
+          else
+            git commit -m "chore(charts): auto-sync radar charts with latest stats [skip ci]"
+            git push
+          fi
