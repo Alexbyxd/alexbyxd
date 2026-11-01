@@ -1,0 +1,188 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="610" viewBox="0 0 1180 610" role="img" aria-labelledby="title desc">
+  <title id="title">Alex Baltazar Castellon — Full Stack Developer</title>
+  <desc id="desc">Synthwave terminal profile — Full Stack Developer from Bolivia.</desc>
+  <defs>
+    <linearGradient id="sunGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f72585"/>
+      <stop offset="100%" stop-color="#7209b7"/>
+    </linearGradient>
+    <linearGradient id="skyGrad" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#10002b"/>
+      <stop offset="100%" stop-color="#1a0a2e"/>
+    </linearGradient>
+    <filter id="glowPink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feFlood flood-color="#f72585" flood-opacity=".5"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowCyan" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#4cc9f0" flood-opacity=".5"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowPurple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feFlood flood-color="#b44fff" flood-opacity=".4"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="leftClip">
+      <rect x="49" y="124" width="390" height="414" rx="3"/>
+    </clipPath>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="1180" height="610" rx="18" fill="#10002b"/>
+  <rect x="13" y="13" width="1154" height="584" rx="13" fill="#1a0a2e" stroke="#3a0ca3"/>
+
+  <!-- Title bar -->
+  <path d="M13 62H1167" stroke="#3a0ca3"/>
+  <circle cx="38" cy="38" r="6" fill="#FF5F57"/>
+  <circle cx="59" cy="38" r="6" fill="#FEBC2E"/>
+  <circle cx="80" cy="38" r="6" fill="#28C840"/>
+  <text x="590" y="43" text-anchor="middle" fill="#6b5b8e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" letter-spacing=".4">vim profile.yml</text>
+
+  <!-- ═══ LEFT PANEL ═══ -->
+  <rect x="35" y="88" width="418" height="472" rx="6" fill="#120d24" stroke="#3a0ca3"/>
+  <path d="M35 124H453" stroke="#3a0ca3"/>
+  <text x="49" y="111" fill="#b44fff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="700" letter-spacing="1.2">VISUAL.MAP</text>
+  <text x="438" y="111" text-anchor="end" fill="#6b5b8e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">RETROWAVE / SYNTHWAVE</text>
+
+  <!-- Corner markers -->
+  <path d="M49 141h14M49 141v14M439 141h-14M439 141v14M49 539h14M49 539v-14M439 539h-14M439 539v-14" fill="none" stroke="#b44fff" opacity=".6"/>
+
+  <!-- ── SYNTHWAVE ART inside left panel ── -->
+  <g clip-path="url(#leftClip)">
+    <!-- Sky -->
+    <rect x="49" y="124" width="390" height="215" fill="url(#skyGrad)"/>
+    <!-- Ground -->
+    <rect x="49" y="339" width="390" height="199" fill="#0d0020"/>
+
+    <!-- Stars -->
+    <circle cx="75"  cy="148" r="1.5" fill="#e0aaff" opacity=".9"/>
+    <circle cx="120" cy="138" r="1"   fill="#e0aaff" opacity=".7"/>
+    <circle cx="190" cy="160" r="1.5" fill="#4cc9f0" opacity=".8"/>
+    <circle cx="265" cy="133" r="1"   fill="#e0aaff" opacity=".6"/>
+    <circle cx="310" cy="152" r="1"   fill="#f72585" opacity=".7"/>
+    <circle cx="380" cy="145" r="1.5" fill="#e0aaff" opacity=".8"/>
+    <circle cx="85"  cy="195" r="1"   fill="#e0aaff" opacity=".6"/>
+    <circle cx="155" cy="175" r="1.5" fill="#4cc9f0" opacity=".7"/>
+    <circle cx="230" cy="190" r="1"   fill="#e0aaff" opacity=".5"/>
+    <circle cx="340" cy="170" r="1"   fill="#e0aaff" opacity=".7"/>
+    <circle cx="410" cy="185" r="1.5" fill="#f72585" opacity=".5"/>
+    <circle cx="60"  cy="250" r="1"   fill="#e0aaff" opacity=".4"/>
+    <circle cx="135" cy="225" r="1"   fill="#4cc9f0" opacity=".5"/>
+    <circle cx="295" cy="210" r="1"   fill="#e0aaff" opacity=".5"/>
+    <circle cx="425" cy="240" r="1"   fill="#e0aaff" opacity=".4"/>
+    <circle cx="175" cy="265" r="1"   fill="#b44fff" opacity=".5"/>
+    <circle cx="360" cy="255" r="1"   fill="#e0aaff" opacity=".4"/>
+
+    <!-- Sun (behind grid) -->
+    <circle cx="244" cy="339" r="90" fill="url(#sunGrad)"/>
+    <!-- Sun horizontal stripes (ground cuts into sun) -->
+    <rect x="49" y="343" width="390" height="9"  fill="#0d0020"/>
+    <rect x="49" y="358" width="390" height="9"  fill="#0d0020"/>
+    <rect x="49" y="374" width="390" height="10" fill="#0d0020"/>
+    <rect x="49" y="391" width="390" height="11" fill="#0d0020"/>
+    <rect x="49" y="410" width="390" height="13" fill="#0d0020"/>
+    <rect x="49" y="431" width="390" height="16" fill="#0d0020"/>
+    <rect x="49" y="460" width="390" height="20" fill="#0d0020"/>
+    <rect x="49" y="494" width="390" height="44" fill="#0d0020"/>
+
+    <!-- Horizon glow line -->
+    <line x1="49" y1="339" x2="439" y2="339" stroke="#f72585" stroke-width="2.5" filter="url(#glowPink)" opacity=".95"/>
+
+    <!-- Ground grid horizontal lines -->
+    <line x1="49" y1="352" x2="439" y2="352" stroke="#f72585" stroke-width="1" opacity=".75"/>
+    <line x1="49" y1="367" x2="439" y2="367" stroke="#f72585" stroke-width="1" opacity=".65"/>
+    <line x1="49" y1="383" x2="439" y2="383" stroke="#f72585" stroke-width="1" opacity=".55"/>
+    <line x1="49" y1="401" x2="439" y2="401" stroke="#f72585" stroke-width="1" opacity=".45"/>
+    <line x1="49" y1="422" x2="439" y2="422" stroke="#f72585" stroke-width="1" opacity=".35"/>
+    <line x1="49" y1="447" x2="439" y2="447" stroke="#f72585" stroke-width="1" opacity=".25"/>
+    <line x1="49" y1="479" x2="439" y2="479" stroke="#f72585" stroke-width="1" opacity=".18"/>
+    <line x1="49" y1="521" x2="439" y2="521" stroke="#f72585" stroke-width="1" opacity=".12"/>
+
+    <!-- Ground grid vertical lines (converge to vanishing point 244,339) -->
+    <line x1="244" y1="339" x2="49"  y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".55" filter="url(#glowCyan)"/>
+    <line x1="244" y1="339" x2="112" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".5"/>
+    <line x1="244" y1="339" x2="175" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".5"/>
+    <line x1="244" y1="339" x2="244" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".5"/>
+    <line x1="244" y1="339" x2="313" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".5"/>
+    <line x1="244" y1="339" x2="376" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".5"/>
+    <line x1="244" y1="339" x2="439" y2="538" stroke="#4cc9f0" stroke-width="1" opacity=".55" filter="url(#glowCyan)"/>
+  </g>
+
+  <!-- Left panel footer -->
+  <text x="49" y="556" fill="#6b5b8e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12">RETROWAVE · SYNTHWAVE · BOLIVIA 🇧🇴</text>
+
+  <!-- ═══ RIGHT PANEL (vim editor) ═══ -->
+  <rect x="474" y="88" width="672" height="472" rx="6" fill="#120d24" stroke="#3a0ca3"/>
+  <path d="M474 124H1146" stroke="#3a0ca3"/>
+  <text x="488" y="111" fill="#e0aaff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" font-weight="600">profile.yml<tspan fill="#4cc9f0">[YAML]</tspan></text>
+  <rect x="1046" y="96" width="90" height="22" rx="4" fill="#f72585"/>
+  <text x="1091" y="111" text-anchor="middle" fill="#10002b" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">@alexbyxd</text>
+
+  <!-- Vim content: line number x=506, content x=525/542, spacing=21.5px -->
+
+  <text x="506" y="147"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 1</text>
+  <text x="525" y="147"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#e0aaff" font-weight="700">profile:</text>
+
+  <text x="506" y="168.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 2</text>
+  <text x="542" y="168.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">subject: </tspan><tspan fill="#e8e0f0">Alex Baltazar Castellon</tspan></text>
+
+  <text x="506" y="190"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 3</text>
+  <text x="542" y="190"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">role: </tspan><tspan fill="#e8e0f0">Full Stack Developer</tspan></text>
+
+  <text x="506" y="211.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 4</text>
+  <text x="542" y="211.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">origin: </tspan><tspan fill="#e8e0f0">Bolivia 🇧🇴</tspan></text>
+
+  <text x="506" y="233"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 5</text>
+  <text x="542" y="233"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">focus: </tspan><tspan fill="#e8e0f0">Next.js · NestJS · Laravel · Django</tspan></text>
+
+  <text x="506" y="254.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 6</text>
+  <text x="542" y="254.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">status: </tspan><tspan fill="#e8e0f0">Building · Shipping · Always Learning</tspan></text>
+
+  <text x="506" y="276"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 7</text>
+  <text x="542" y="276"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">toolchain: </tspan><tspan fill="#e8e0f0">Docker · GitHub Actions · Sentry</tspan></text>
+
+  <text x="506" y="297.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 8</text>
+  <text x="525" y="297.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#e0aaff" font-weight="700">stack:</text>
+
+  <text x="506" y="319"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"> 9</text>
+  <text x="542" y="319"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">frontend: </tspan><tspan fill="#e8e0f0">Next.js · React · TypeScript · Tailwind</tspan></text>
+
+  <text x="506" y="340.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">10</text>
+  <text x="542" y="340.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">backend: </tspan><tspan fill="#e8e0f0">NestJS · Laravel · Django · FastAPI</tspan></text>
+
+  <text x="506" y="362"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">11</text>
+  <text x="542" y="362"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">mobile: </tspan><tspan fill="#e8e0f0">Flutter · Dart</tspan></text>
+
+  <text x="506" y="383.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">12</text>
+  <text x="542" y="383.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">databases: </tspan><tspan fill="#e8e0f0">PostgreSQL · MySQL · MongoDB</tspan></text>
+
+  <text x="506" y="405"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">13</text>
+  <text x="542" y="405"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">devops: </tspan><tspan fill="#e8e0f0">Docker · GitHub Actions · Linux</tspan></text>
+
+  <text x="506" y="426.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">14</text>
+  <text x="525" y="426.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" fill="#e0aaff" font-weight="700">contact:</text>
+
+  <text x="506" y="448"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">15</text>
+  <text x="542" y="448"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">linkedin: </tspan><tspan fill="#e8e0f0">/in/alex-baltazar-castellon</tspan></text>
+
+  <text x="506" y="469.5" text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">16</text>
+  <text x="542" y="469.5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">github: </tspan><tspan fill="#e8e0f0">Alexbyxd</tspan></text>
+
+  <text x="506" y="491"   text-anchor="end" fill="#6b5b8e" opacity=".5" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13">17</text>
+  <text x="542" y="491"   font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13"><tspan fill="#f72585">timezone: </tspan><tspan fill="#e8e0f0">UTC-4 · Bolivia</tspan></text>
+
+  <!-- Vim status bar -->
+  <path d="M474 526H1146" stroke="#3a0ca3"/>
+  <rect x="475" y="527" width="670" height="32" fill="#120d24" rx="0 0 5 5"/>
+  <rect x="485" y="533" width="72" height="20" rx="3" fill="#f72585"/>
+  <text x="521" y="547" text-anchor="middle" fill="#10002b" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">NORMAL</text>
+  <text x="569" y="547" fill="#e0aaff" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600">profile.yml</text>
+  <text x="740" y="547" fill="#6b5b8e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">[utf-8]</text>
+  <text x="1134" y="547" text-anchor="end" fill="#6b5b8e" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">17L, 482B  100%  17:1</text>
+</svg>
