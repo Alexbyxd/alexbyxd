@@ -52,16 +52,16 @@ YAML_ROWS = [
 
 THEMES = {
     "dark": {
-        "bg":       "#1e1e1e",
-        "panel":    "#232323",
-        "panel2":   "#2c2c2e",
-        "line":     "#38383a",
+        "bg":       "#000000",
+        "panel":    "#000000",
+        "panel2":   "#000000",
+        "line":     "#3a3a3c",
         "muted":    "#98989d",
-        "text":     "#e5e5e7",
+        "text":     "#f2f2f7",
         "portrait": "#0a84ff",   # macOS system blue (dark)
         "chrome":   "#0a84ff",   # single accent, no second hue
         "accent":   "#0a84ff",
-        "shadow":   "#161616",
+        "shadow":   "#000000",
     },
 }
 
