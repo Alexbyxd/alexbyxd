@@ -10,8 +10,7 @@ Two sources of data:
   2. live language stats from the GitHub API
         python scripts/radar.py --github YOUR_USERNAME -o assets/radar-langs
 
-Writes <out>-dark.svg and <out>-light.svg so the README can swap them with
-<picture> + prefers-color-scheme.
+Writes <out>-dark.svg. The profile is dark-only, so no light variant is built.
 
 skills.json shape:
     {
@@ -33,25 +32,14 @@ from pathlib import Path
 
 THEMES = {
     "dark": {
-        "grid": "#3a0ca3",
-        "spoke": "#2d1b55",
-        "label": "#e0aaff",
-        "value": "#6b5b8e",
-        "title": "#e0aaff",
-        "fill": "#f72585",
-        "stroke": "#f72585",
-        "vertex": "#b44fff",
-        "bg": "none",
-    },
-    "light": {
-        "grid": "#c9b8e8",
-        "spoke": "#e0d0f0",
-        "label": "#3b0764",
-        "value": "#6b5b8e",
-        "title": "#3b0764",
-        "fill": "#f72585",
-        "stroke": "#f72585",
-        "vertex": "#b44fff",
+        "grid": "#14304f",
+        "spoke": "#12283f",
+        "label": "#a8c7fa",
+        "value": "#6d92b8",
+        "title": "#a8c7fa",
+        "fill": "#2f7cf6",
+        "stroke": "#2f7cf6",
+        "vertex": "#38bdf8",
         "bg": "none",
     },
 }
@@ -308,7 +296,7 @@ def main(argv=None):
         sys.exit("a radar chart needs at least 3 axes")
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    for theme in ("dark", "light"):
+    for theme in ("dark",):
         svg = render(title, axes, theme, args.size, args.rings, args.values,
                      args.animate)
         dest = args.out.with_name(f"{args.out.name}-{theme}.svg")

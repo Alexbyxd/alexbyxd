@@ -52,28 +52,16 @@ YAML_ROWS = [
 
 THEMES = {
     "dark": {
-        "bg":       "#0d001a",
-        "panel":    "#120526",
-        "panel2":   "#180833",
-        "line":     "#3a0ca3",
-        "muted":    "#8f7aa8",
-        "text":     "#f0e6f8",
-        "portrait": "#f72585",   # synthwave hot pink
-        "chrome":   "#4cc9f0",   # synthwave cyan
-        "accent":   "#f72585",
-        "shadow":   "#070014",
-    },
-    "light": {
-        "bg":       "#fdf0f8",
-        "panel":    "#ffffff",
-        "panel2":   "#fae8f5",
-        "line":     "#e0b0db",
-        "muted":    "#9b7b96",
-        "text":     "#2d1a2a",
-        "portrait": "#f72585",
-        "chrome":   "#7209b7",
-        "accent":   "#f72585",
-        "shadow":   "#d4a0cb",
+        "bg":       "#05070c",
+        "panel":    "#0a0f18",
+        "panel2":   "#0f1622",
+        "line":     "#14304f",
+        "muted":    "#5288bb",
+        "text":     "#dbe9ff",
+        "portrait": "#2f7cf6",   # midnight blue portrait
+        "chrome":   "#38bdf8",   # cyan support accent
+        "accent":   "#2f7cf6",
+        "shadow":   "#020306",
     },
 }
 
@@ -207,7 +195,7 @@ def render_svg(
         f'width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
         'aria-labelledby="title desc">',
         f'<title id="title">Alex Baltazar Castellon — Full Stack Developer</title>',
-        '<desc id="desc">Animated Synthwave terminal profile with particle logo morphing.</desc>',
+        '<desc id="desc">Animated terminal profile with particle logo morphing.</desc>',
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
@@ -363,7 +351,9 @@ def render_svg(
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">17L, 512B  100%  17:1</text>',
         "</svg>",
     ])
-    return "".join(parts)
+    # One element per line: a single-line 456 KiB SVG is undiffable and
+    # unreviewable, so every part gets its own newline.
+    return "\n".join(parts)
 
 
 def main() -> None:
@@ -381,7 +371,7 @@ def main() -> None:
         for name, image in logos.items()
     }
 
-    for theme in ("dark", "light"):
+    for theme in ("dark",):
         svg = render_svg(theme, logo_points, hold_particles, rng)
         out = ASSETS / f"banner-{theme}.svg"
         out.write_text(svg, encoding="utf-8")
