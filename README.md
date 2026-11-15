@@ -52,8 +52,8 @@
 
 <div align="center">
 
-<img height="160" src="https://github-stats-extended.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=1e1e1e&title_color=0a84ff&icon_color=98989d&text_color=e5e5e7&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
-<img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=1e1e1e&title_color=0a84ff&text_color=e5e5e7&langs_count=8" alt="Top Languages">
+<img height="160" src="https://github-stats-extended.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=000000&title_color=0a84ff&icon_color=98989d&text_color=f2f2f7&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
+<img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=000000&title_color=0a84ff&text_color=f2f2f7&langs_count=8" alt="Top Languages">
 
 <br>
 
@@ -72,13 +72,13 @@
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>&nbsp;&nbsp;
 <a href="https://www.instagram.com/alexby_xdxd/">
-  <img src="https://img.shields.io/badge/Instagram-0a84ff?style=for-the-badge&logo=instagram&logoColor=1e1e1e" alt="Instagram">
+  <img src="https://img.shields.io/badge/Instagram-0a84ff?style=for-the-badge&logo=instagram&logoColor=000000" alt="Instagram">
 </a>&nbsp;&nbsp;
 <a href="https://www.facebook.com/alex.baltazar.54">
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
 </a>&nbsp;&nbsp;
 <a href="https://github.com/Alexbyxd">
-  <img src="https://img.shields.io/badge/GitHub-48484a?style=for-the-badge&logo=github&logoColor=e5e5e7" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-48484a?style=for-the-badge&logo=github&logoColor=f2f2f7" alt="GitHub">
 </a>
 
 </div>

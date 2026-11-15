@@ -14,22 +14,22 @@
   </style>
 
   <!-- Background Base -->
-  <rect width="960" height="480" rx="16" fill="#1e1e1e"/>
-  <rect x="8" y="8" width="944" height="464" rx="12" fill="#232323" stroke="#38383a" stroke-width="2"/>
+  <rect width="960" height="480" rx="16" fill="#000000"/>
+  <rect x="8" y="8" width="944" height="464" rx="12" fill="#000000" stroke="#3a3a3c" stroke-width="2"/>
 
   <!-- Terminal Top Bar -->
-  <path d="M8 58H952" stroke="#38383a" stroke-width="1.5"/>
+  <path d="M8 58H952" stroke="#3a3a3c" stroke-width="1.5"/>
   <circle cx="34" cy="33" r="5.5" fill="#FF5F57"/>
   <circle cx="53" cy="33" r="5.5" fill="#FEBC2E"/>
   <circle cx="72" cy="33" r="5.5" fill="#28C840"/>
 
   <text x="100" y="38" fill="#98989d" class="mono" font-size="14">alexbyxd@dev  ·  stack-inspector  ·  active</text>
-  <rect x="825" y="22" width="105" height="22" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-  <text x="877" y="37" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">v2.4.0 [PROD]</text>
+  <rect x="825" y="22" width="105" height="22" rx="4" fill="#000000" stroke="#48484a"/>
+  <text x="877" y="37" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">v2.4.0 [PROD]</text>
 
   <!-- Header Prompt -->
   <text x="35" y="88" fill="#0a84ff" class="mono" font-size="16" font-weight="700">alex@dev:~$</text>
-  <text x="155" y="88" fill="#e5e5e7" class="mono" font-size="16">cat</text>
+  <text x="155" y="88" fill="#f2f2f7" class="mono" font-size="16">cat</text>
   <text x="190" y="88" fill="#0a84ff" class="mono" font-size="16" font-weight="700">tech-stack.yaml</text>
   <rect x="330" y="74" width="8" height="17" fill="#0a84ff" class="cursor-blink"/>
 
@@ -37,171 +37,171 @@
 
   <!-- Card 1: Frontend & UI -->
   <g transform="translate(35, 110)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">✦</tspan><tspan fill="#e5e5e7"> FRONTEND &amp; UI</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">✦</tspan><tspan fill="#f2f2f7"> FRONTEND &amp; UI</tspan></text>
 
     <!-- Badges -->
     <!-- Next.js -->
-    <rect x="14" y="42" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="52" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="600">Next.js</text>
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="52" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="600">Next.js</text>
 
     <!-- React -->
-    <rect x="98" y="42" width="70" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="133" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="600">React</text>
+    <rect x="98" y="42" width="70" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="133" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="600">React</text>
 
     <!-- TypeScript -->
-    <rect x="176" y="42" width="90" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="221" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="600">TypeScript</text>
+    <rect x="176" y="42" width="90" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="221" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="600">TypeScript</text>
 
     <!-- Tailwind -->
-    <rect x="14" y="78" width="86" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="57" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">TailwindCSS</text>
+    <rect x="14" y="78" width="86" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="57" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">TailwindCSS</text>
 
     <!-- JavaScript -->
-    <rect x="108" y="78" width="86" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="151" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">JavaScript</text>
+    <rect x="108" y="78" width="86" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="151" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">JavaScript</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">Architecture: SSR · Component-First</text>
   </g>
 
   <!-- Card 2: Backend APIs -->
   <g transform="translate(340, 110)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">⚙</tspan><tspan fill="#e5e5e7"> BACKEND ENGINES</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">⚙</tspan><tspan fill="#f2f2f7"> BACKEND ENGINES</tspan></text>
 
     <!-- NestJS -->
-    <rect x="14" y="42" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="52" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">NestJS</text>
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="52" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">NestJS</text>
 
     <!-- Laravel -->
-    <rect x="98" y="42" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="136" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Laravel</text>
+    <rect x="98" y="42" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="136" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Laravel</text>
 
     <!-- Django -->
-    <rect x="182" y="42" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="220" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Django</text>
+    <rect x="182" y="42" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="220" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Django</text>
 
     <!-- Python -->
-    <rect x="14" y="78" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="52" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Python</text>
+    <rect x="14" y="78" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="52" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Python</text>
 
     <!-- PHP -->
-    <rect x="98" y="78" width="60" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="128" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">PHP</text>
+    <rect x="98" y="78" width="60" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="128" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">PHP</text>
 
     <!-- Node.js -->
-    <rect x="166" y="78" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="204" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Node.js</text>
+    <rect x="166" y="78" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="204" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Node.js</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">Focus: Clean Hexagonal · REST/WS</text>
   </g>
 
   <!-- Card 3: Mobile & Cross-Platform -->
   <g transform="translate(645, 110)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">📱</tspan><tspan fill="#e5e5e7"> MOBILE APPS</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">📱</tspan><tspan fill="#f2f2f7"> MOBILE APPS</tspan></text>
 
     <!-- Flutter -->
-    <rect x="14" y="42" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="52" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">Flutter</text>
+    <rect x="14" y="42" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="52" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">Flutter</text>
 
     <!-- Dart -->
-    <rect x="98" y="42" width="60" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="128" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Dart</text>
+    <rect x="98" y="42" width="60" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="128" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Dart</text>
 
     <!-- Android / iOS target -->
-    <rect x="14" y="78" width="105" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="66" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Android &amp; iOS</text>
+    <rect x="14" y="78" width="105" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="66" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Android &amp; iOS</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">State: Bloc · Provider · Native Sync</text>
   </g>
 
   <!-- Card 4: Databases -->
   <g transform="translate(35, 280)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">▣</tspan><tspan fill="#e5e5e7"> DATA &amp; STORAGE</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">▣</tspan><tspan fill="#f2f2f7"> DATA &amp; STORAGE</tspan></text>
 
     <!-- PostgreSQL -->
-    <rect x="14" y="42" width="94" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="61" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">PostgreSQL</text>
+    <rect x="14" y="42" width="94" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="61" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">PostgreSQL</text>
 
     <!-- MySQL -->
-    <rect x="116" y="42" width="70" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="151" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">MySQL</text>
+    <rect x="116" y="42" width="70" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="151" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">MySQL</text>
 
     <!-- MongoDB -->
-    <rect x="194" y="42" width="74" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="231" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">MongoDB</text>
+    <rect x="194" y="42" width="74" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="231" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">MongoDB</text>
 
     <!-- Redis -->
-    <rect x="14" y="78" width="68" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="48" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Redis</text>
+    <rect x="14" y="78" width="68" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="48" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Redis</text>
 
     <!-- SQL Tuning -->
-    <rect x="90" y="78" width="115" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="147" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">SQL Tuning &amp; ORM</text>
+    <rect x="90" y="78" width="115" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="147" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">SQL Tuning &amp; ORM</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">Schema Design · Index Optimization</text>
   </g>
 
   <!-- Card 5: Containers & DevOps -->
   <g transform="translate(340, 280)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">🐳</tspan><tspan fill="#e5e5e7"> CONTAINERS &amp; CI/CD</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">🐳</tspan><tspan fill="#f2f2f7"> CONTAINERS &amp; CI/CD</tspan></text>
 
     <!-- Docker -->
-    <rect x="14" y="42" width="70" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="49" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">Docker</text>
+    <rect x="14" y="42" width="70" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="49" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">Docker</text>
 
     <!-- GitHub Actions -->
-    <rect x="92" y="42" width="110" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="147" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">GitHub Actions</text>
+    <rect x="92" y="42" width="110" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="147" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">GitHub Actions</text>
 
     <!-- Linux / Bash -->
-    <rect x="14" y="78" width="60" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="44" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Linux</text>
+    <rect x="14" y="78" width="60" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="44" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Linux</text>
 
     <!-- Sentry -->
-    <rect x="82" y="78" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="120" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Sentry</text>
+    <rect x="82" y="78" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="120" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Sentry</text>
 
     <!-- Git -->
-    <rect x="166" y="78" width="55" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="193" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Git</text>
+    <rect x="166" y="78" width="55" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="193" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Git</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">Multi-stage builds · Telemetry</text>
   </g>
 
   <!-- Card 6: Learning Cloud -->
   <g transform="translate(645, 280)">
-    <rect width="280" height="150" rx="8" fill="#232323" stroke="#38383a" stroke-width="1.2"/>
-    <rect x="0" y="0" width="280" height="30" rx="8" fill="#2c2c2e"/>
-    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">☁</tspan><tspan fill="#e5e5e7"> LEARNING &amp; CLOUD</tspan></text>
+    <rect width="280" height="150" rx="8" fill="#000000" stroke="#3a3a3c" stroke-width="1.2"/>
+    <rect x="0" y="0" width="280" height="30" rx="8" fill="#000000"/>
+    <text x="14" y="21" class="mono" font-size="13" font-weight="700"><tspan fill="#0a84ff">☁</tspan><tspan fill="#f2f2f7"> LEARNING &amp; CLOUD</tspan></text>
 
     <!-- AWS -->
-    <rect x="14" y="42" width="60" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="44" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">AWS</text>
+    <rect x="14" y="42" width="60" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="44" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">AWS</text>
 
     <!-- GCP -->
-    <rect x="82" y="42" width="60" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="112" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">GCP</text>
+    <rect x="82" y="42" width="60" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="112" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">GCP</text>
 
     <!-- Kubernetes -->
-    <rect x="150" y="42" width="94" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="197" y="59" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Kubernetes</text>
+    <rect x="150" y="42" width="94" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="197" y="59" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Kubernetes</text>
 
     <!-- Terraform -->
-    <rect x="14" y="78" width="86" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="57" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Terraform</text>
+    <rect x="14" y="78" width="86" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="57" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Terraform</text>
 
     <!-- Ansible -->
-    <rect x="108" y="78" width="76" height="26" rx="4" fill="#2c2c2e" stroke="#48484a"/>
-    <text x="146" y="95" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Ansible</text>
+    <rect x="108" y="78" width="76" height="26" rx="4" fill="#000000" stroke="#48484a"/>
+    <text x="146" y="95" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Ansible</text>
 
     <text x="14" y="132" fill="#98989d" class="mono" font-size="11">⚡ Goal: Cloud Native &amp; IaC</text>
   </g>
