@@ -1,3 +1,12 @@
-numpy>=1.26
-scipy>=1.11
-Pillow>=10.0
+# Pinned exactly, not ranged.
+#
+# The banner generator is deterministic: same inputs plus same dependency
+# versions reproduce assets/banner-dark.svg byte for byte. With ">=" ranges a
+# version bump could silently rewrite ~450 KiB of particle geometry, and the
+# workflow would commit that as a bot change nobody asked for.
+#
+# These are the exact versions verified to regenerate the committed banner with
+# zero diff. They require Python >= 3.12, which is why charts.yml pins 3.14.
+numpy==2.5.5
+scipy==1.18.1
+Pillow==13.0.0
