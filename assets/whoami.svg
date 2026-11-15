@@ -108,7 +108,7 @@
 
   <!-- Live animated oscilloscope neon waves -->
   <g transform="translate(670, 160)">
-    <!-- Wave 1 (Pink) -->
+    <!-- Wave 1 (Blue) -->
     <path d="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" fill="none" stroke="url(#waveGrad1)" stroke-width="3" filter="url(#glowBlue)">
       <animate attributeName="d" 
         values="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35;
