@@ -14,7 +14,7 @@
 
 <br>
 
-<img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=2f7cf6&label=profile+views" alt="profile views">
+<img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=0a84ff&label=profile+views" alt="profile views">
 
 </div>
 
@@ -52,12 +52,12 @@
 
 <div align="center">
 
-<img height="160" src="https://github-stats-extended.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=05070c&title_color=2f7cf6&icon_color=38bdf8&text_color=a8c7fa&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
-<img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=05070c&title_color=2f7cf6&text_color=a8c7fa&langs_count=8" alt="Top Languages">
+<img height="160" src="https://github-stats-extended.vercel.app/api?username=alexbyxd&show_icons=true&theme=dark&hide_border=true&bg_color=1e1e1e&title_color=0a84ff&icon_color=98989d&text_color=e5e5e7&rank_icon=github&include_all_commits=true&count_private=true" alt="GitHub Stats">
+<img height="160" src="https://github-stats-extended.vercel.app/api/top-langs/?username=alexbyxd&layout=compact&theme=dark&hide_border=true&bg_color=1e1e1e&title_color=0a84ff&text_color=e5e5e7&langs_count=8" alt="Top Languages">
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=alexbyxd&theme=dark&hide_border=true&background=05070c&ring=2f7cf6&fire=38bdf8&currStreakLabel=2f7cf6&sideLabels=4a7aa8&dates=4a7aa8" alt="GitHub Streak">
+<img src="https://streak-stats.demolab.com?user=alexbyxd&theme=dark&hide_border=true&background=1e1e1e&ring=0a84ff&fire=0a84ff&currStreakLabel=0a84ff&sideLabels=98989d&dates=98989d" alt="GitHub Streak">
 
 </div>
 
@@ -72,13 +72,13 @@
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
 </a>&nbsp;&nbsp;
 <a href="https://www.instagram.com/alexby_xdxd/">
-  <img src="https://img.shields.io/badge/Instagram-2f7cf6?style=for-the-badge&logo=instagram&logoColor=05070c" alt="Instagram">
+  <img src="https://img.shields.io/badge/Instagram-0a84ff?style=for-the-badge&logo=instagram&logoColor=1e1e1e" alt="Instagram">
 </a>&nbsp;&nbsp;
 <a href="https://www.facebook.com/alex.baltazar.54">
   <img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook">
 </a>&nbsp;&nbsp;
 <a href="https://github.com/Alexbyxd">
-  <img src="https://img.shields.io/badge/GitHub-38bdf8?style=for-the-badge&logo=github&logoColor=05070c" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-48484a?style=for-the-badge&logo=github&logoColor=e5e5e7" alt="GitHub">
 </a>
 
 </div>

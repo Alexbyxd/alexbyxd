@@ -1,34 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-labelledby="title desc">
   <title id="title">Alex Baltazar Castellon — Full Stack Developer</title>
-  <desc id="desc">Black and blue terminal profile card with live neon pulse and animated waveforms.</desc>
-  <defs>
-    <linearGradient id="borderGrad" x1="0" x2="1" y1="0" y2="1">
-      <stop offset="0%" stop-color="#2f7cf6"/>
-      <stop offset="50%" stop-color="#1f6feb"/>
-      <stop offset="100%" stop-color="#38bdf8"/>
-    </linearGradient>
-    <linearGradient id="waveGrad1" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#2f7cf6"/>
-      <stop offset="100%" stop-color="#38bdf8"/>
-    </linearGradient>
-    <linearGradient id="waveGrad2" x1="0" x2="1" y1="0" y2="0">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="#1f6feb"/>
-    </linearGradient>
-    <filter id="glowBlue" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="glowCyan" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="scanlineGrad" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#2f7cf6" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
-    </linearGradient>
-  </defs>
+  <desc id="desc">Flat dark terminal profile card with animated waveforms.</desc>
 
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
@@ -36,88 +8,78 @@
       0%, 49% { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
-    @keyframes neonGlow {
-      0%, 100% { filter: drop-shadow(0 0 2px #2f7cf6); }
-      50% { filter: drop-shadow(0 0 8px #38bdf8); }
-    }
     .cursor-blink { animation: blink 1s infinite; }
-    .neon-pulse { animation: neonGlow 3.5s ease-in-out infinite; }
   </style>
 
   <!-- Background Base -->
-  <rect width="960" height="430" rx="18" fill="#05070c"/>
-  <!-- Outer border gradient with neon pulse -->
-  <rect x="9" y="9" width="942" height="412" rx="13" fill="none" stroke="url(#borderGrad)" stroke-width="2" class="neon-pulse"/>
+  <rect width="960" height="430" rx="18" fill="#1e1e1e"/>
+  <!-- Outer frame -->
+  <rect x="9" y="9" width="942" height="412" rx="13" fill="none" stroke="#38383a" stroke-width="2"/>
 
   <!-- Traffic lights -->
   <circle cx="35" cy="35" r="5" fill="#FF5F57"/>
   <circle cx="54" cy="35" r="5" fill="#FEBC2E"/>
   <circle cx="73" cy="35" r="5" fill="#28C840"/>
-  <text x="98" y="41" fill="#5288bb" class="mono" font-size="14">alexbyxd  ·  profile shell  ·  online</text>
-  <path d="M29 58H931" stroke="#12283f" stroke-width="1.2"/>
-
-  <!-- Scanning beam across entire card -->
-  <rect x="9" y="58" width="942" height="30" fill="url(#scanlineGrad)">
-    <animateTransform attributeName="transform" type="translate" values="0,0; 0,340; 0,0" dur="7s" repeatCount="indefinite" ease="linear"/>
-  </rect>
+  <text x="98" y="41" fill="#98989d" class="mono" font-size="14">alexbyxd  ·  profile shell  ·  online</text>
+  <path d="M29 58H931" stroke="#38383a" stroke-width="1.2"/>
 
   <!-- ═══ MAIN LEFT TERMINAL PANEL ═══ -->
-  <rect x="29" y="74" width="600" height="326" rx="9" fill="#0a0f18" stroke="#1f6feb" stroke-width="1.3"/>
+  <rect x="29" y="74" width="600" height="326" rx="9" fill="#232323" stroke="#38383a" stroke-width="1.3"/>
 
   <!-- ❯ whoami command + blinking cursor -->
-  <text x="50" y="110" fill="#38bdf8" class="mono" font-size="19" font-weight="700" filter="url(#glowCyan)">❯ whoami</text>
-  <rect x="156" y="94" width="8" height="18" fill="#38bdf8" class="cursor-blink"/>
+  <text x="50" y="110" fill="#0a84ff" class="mono" font-size="19" font-weight="700">❯ whoami</text>
+  <rect x="156" y="94" width="8" height="18" fill="#0a84ff" class="cursor-blink"/>
 
   <!-- Output line -->
-  <text x="50" y="142" fill="#a8c7fa" class="mono" font-size="17">alex_baltazar</text>
-  <text x="206" y="142" fill="#5288bb" class="mono" font-size="17">—</text>
-  <text x="231" y="142" fill="#7cb0ff" class="mono" font-size="17" font-weight="600">Full Stack Developer</text>
+  <text x="50" y="142" fill="#e5e5e7" class="mono" font-size="17">alex_baltazar</text>
+  <text x="206" y="142" fill="#98989d" class="mono" font-size="17">—</text>
+  <text x="231" y="142" fill="#e5e5e7" class="mono" font-size="17" font-weight="600">Full Stack Developer</text>
 
   <!-- Separator -->
-  <path d="M50 162H610" stroke="#12283f"/>
+  <path d="M50 162H610" stroke="#38383a"/>
 
   <!-- context + mission -->
-  <text x="50"  y="193" fill="#5288bb" class="mono" font-size="16">context:</text>
-  <text x="175" y="193" fill="#1f6feb" class="mono" font-size="16" font-weight="600">Bolivia 🇧🇴</text>
-  <text x="50"  y="222" fill="#5288bb" class="mono" font-size="16">mission:</text>
-  <text x="175" y="222" fill="#38bdf8" class="mono" font-size="16">build real systems end-to-end</text>
+  <text x="50"  y="193" fill="#98989d" class="mono" font-size="16">context:</text>
+  <text x="175" y="193" fill="#e5e5e7" class="mono" font-size="16" font-weight="600">Bolivia 🇧🇴</text>
+  <text x="50"  y="222" fill="#98989d" class="mono" font-size="16">mission:</text>
+  <text x="175" y="222" fill="#e5e5e7" class="mono" font-size="16">build real systems end-to-end</text>
 
   <!-- Separator -->
-  <path d="M50 242H610" stroke="#12283f"/>
+  <path d="M50 242H610" stroke="#38383a"/>
 
   <!-- ❯ ls expertise/ command -->
-  <text x="50" y="271" fill="#38bdf8" class="mono" font-size="19" font-weight="700" filter="url(#glowCyan)">❯ ls expertise/</text>
-  <rect x="236" y="255" width="8" height="18" fill="#2f7cf6" class="cursor-blink"/>
+  <text x="50" y="271" fill="#0a84ff" class="mono" font-size="19" font-weight="700">❯ ls expertise/</text>
+  <rect x="236" y="255" width="8" height="18" fill="#0a84ff" class="cursor-blink"/>
 
   <!-- Folder rows -->
-  <text x="50"  y="304" fill="#7cb0ff" class="mono" font-size="15" font-weight="600">fullstack/</text>
-  <text x="195" y="304" fill="#a8c7fa" class="mono" font-size="15">Next.js · NestJS · Laravel · Django</text>
+  <text x="50"  y="304" fill="#e5e5e7" class="mono" font-size="15" font-weight="600">fullstack/</text>
+  <text x="195" y="304" fill="#98989d" class="mono" font-size="15">Next.js · NestJS · Laravel · Django</text>
 
-  <text x="50"  y="333" fill="#7cb0ff" class="mono" font-size="15" font-weight="600">mobile/</text>
-  <text x="195" y="333" fill="#a8c7fa" class="mono" font-size="15">Flutter · Dart · Docker</text>
+  <text x="50"  y="333" fill="#e5e5e7" class="mono" font-size="15" font-weight="600">mobile/</text>
+  <text x="195" y="333" fill="#98989d" class="mono" font-size="15">Flutter · Dart · Docker</text>
 
-  <text x="50"  y="362" fill="#7cb0ff" class="mono" font-size="15" font-weight="600">learning/</text>
-  <text x="195" y="362" fill="#2f7cf6" class="mono" font-size="15" font-weight="700" filter="url(#glowBlue)">DevOps · Cloud · AWS · GCP</text>
+  <text x="50"  y="362" fill="#e5e5e7" class="mono" font-size="15" font-weight="600">learning/</text>
+  <text x="195" y="362" fill="#98989d" class="mono" font-size="15" font-weight="700">DevOps · Cloud · AWS · GCP</text>
 
-  <!-- ═══ RIGHT PANEL: SYNTHWAVE SIGNALS ═══ -->
-  <rect x="647" y="74" width="284" height="326" rx="9" fill="#0a0f18" stroke="#1f6feb" stroke-width="1.3"/>
+  <!-- ═══ RIGHT PANEL: SYSTEM SIGNALS ═══ -->
+  <rect x="647" y="74" width="284" height="326" rx="9" fill="#232323" stroke="#38383a" stroke-width="1.3"/>
 
-  <text x="670" y="110" fill="#7cb0ff" class="mono" font-size="16" font-weight="700">stack runtime</text>
-  <rect x="850" y="96" width="65" height="18" rx="4" fill="#14304f" opacity="0.6"/>
-  <text x="882" y="109" text-anchor="middle" fill="#38bdf8" class="mono" font-size="10" font-weight="700">ONLINE</text>
+  <text x="670" y="110" fill="#e5e5e7" class="mono" font-size="16" font-weight="700">stack runtime</text>
+  <rect x="850" y="96" width="65" height="18" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+  <text x="882" y="109" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="10" font-weight="700">ONLINE</text>
 
-  <!-- Live animated oscilloscope neon waves -->
+  <!-- Flat animated oscilloscope waves (one accent, width + opacity differ) -->
   <g transform="translate(670, 160)">
-    <!-- Wave 1 (Blue) -->
-    <path d="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" fill="none" stroke="url(#waveGrad1)" stroke-width="3" filter="url(#glowBlue)">
+    <!-- Wave 1 (accent, heavy) -->
+    <path d="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" fill="none" stroke="#0a84ff" stroke-width="3">
       <animate attributeName="d" 
         values="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35;
                 M0,35 Q30,65 60,35 T120,35 T180,35 T240,35;
                 M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" 
         dur="3s" repeatCount="indefinite" ease="easeInOut"/>
     </path>
-    <!-- Wave 2 (Cyan) -->
-    <path d="M0,45 Q30,75 60,45 T120,45 T180,45 T240,45" fill="none" stroke="url(#waveGrad2)" stroke-width="2.2" filter="url(#glowCyan)" opacity="0.85">
+    <!-- Wave 2 (accent, light) -->
+    <path d="M0,45 Q30,75 60,45 T120,45 T180,45 T240,45" fill="none" stroke="#0a84ff" stroke-width="1.4" opacity="0.55">
       <animate attributeName="d" 
         values="M0,45 Q30,75 60,45 T120,45 T180,45 T240,45;
                 M0,45 Q30,15 60,45 T120,45 T180,45 T240,45;
@@ -128,37 +90,37 @@
 
   <!-- Blinking command line execution -->
   <g transform="translate(670, 255)">
-    <rect x="0" y="0" width="8" height="15" fill="#2f7cf6" class="cursor-blink"/>
-    <text x="14" y="12" fill="#a8c7fa" class="mono" font-size="13">systemctl status --all</text>
+    <rect x="0" y="0" width="8" height="15" fill="#0a84ff" class="cursor-blink"/>
+    <text x="14" y="12" fill="#98989d" class="mono" font-size="13">systemctl status --all</text>
   </g>
 
   <!-- Tech tags grid -->
   <g transform="translate(670, 285)">
-    <rect x="0"   y="0" width="56" height="20" rx="4" fill="#2f7cf6" fill-opacity="0.25" stroke="#2f7cf6"/>
-    <text x="28"  y="14" text-anchor="middle" fill="#7dd3fc" class="mono" font-size="11" font-weight="700">NestJS</text>
+    <rect x="0"   y="0" width="56" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="28"  y="14" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">NestJS</text>
 
-    <rect x="64"  y="0" width="56" height="20" rx="4" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8"/>
-    <text x="92"  y="14" text-anchor="middle" fill="#7cb0ff" class="mono" font-size="11" font-weight="700">Next.js</text>
+    <rect x="64"  y="0" width="56" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="92"  y="14" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">Next.js</text>
 
-    <rect x="128" y="0" width="56" height="20" rx="4" fill="#2f7cf6" fill-opacity="0.25" stroke="#2f7cf6"/>
-    <text x="156" y="14" text-anchor="middle" fill="#a8c7fa" class="mono" font-size="11" font-weight="700">Flutter</text>
+    <rect x="128" y="0" width="56" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="156" y="14" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11" font-weight="700">Flutter</text>
 
-    <rect x="192" y="0" width="46" height="20" rx="4" fill="#38bdf8" fill-opacity="0.25" stroke="#38bdf8"/>
-    <text x="215" y="14" text-anchor="middle" fill="#7cb0ff" class="mono" font-size="11">Docker</text>
+    <rect x="192" y="0" width="46" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="215" y="14" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Docker</text>
 
-    <rect x="0"   y="28" width="58" height="20" rx="4" fill="#2f7cf6" fill-opacity="0.2" stroke="#2f7cf6"/>
-    <text x="29"  y="42" text-anchor="middle" fill="#7dd3fc" class="mono" font-size="11">Laravel</text>
+    <rect x="0"   y="28" width="58" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="29"  y="42" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Laravel</text>
 
-    <rect x="66"  y="28" width="54" height="20" rx="4" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8"/>
-    <text x="93"  y="42" text-anchor="middle" fill="#7cb0ff" class="mono" font-size="11">Django</text>
+    <rect x="66"  y="28" width="54" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="93"  y="42" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">Django</text>
 
-    <rect x="128" y="28" width="80" height="20" rx="4" fill="#2f7cf6" fill-opacity="0.2" stroke="#2f7cf6"/>
-    <text x="168" y="42" text-anchor="middle" fill="#7dd3fc" class="mono" font-size="11">PostgreSQL</text>
+    <rect x="128" y="28" width="80" height="20" rx="4" fill="#2c2c2e" stroke="#48484a"/>
+    <text x="168" y="42" text-anchor="middle" fill="#e5e5e7" class="mono" font-size="11">PostgreSQL</text>
   </g>
 
   <!-- Live pulse text indicator -->
-  <circle cx="676" cy="376" r="4" fill="#38bdf8">
+  <circle cx="676" cy="376" r="4" fill="#30d158">
     <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="688" y="380" fill="#5288bb" class="mono" font-size="13">status: always shipping ⚡</text>
+  <text x="688" y="380" fill="#98989d" class="mono" font-size="13">status: always shipping ⚡</text>
 </svg>

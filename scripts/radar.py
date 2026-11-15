@@ -32,14 +32,14 @@ from pathlib import Path
 
 THEMES = {
     "dark": {
-        "grid": "#14304f",
-        "spoke": "#12283f",
-        "label": "#a8c7fa",
-        "value": "#6d92b8",
-        "title": "#a8c7fa",
-        "fill": "#2f7cf6",
-        "stroke": "#2f7cf6",
-        "vertex": "#38bdf8",
+        "grid": "#38383a",
+        "spoke": "#48484a",
+        "label": "#e5e5e7",
+        "value": "#98989d",
+        "title": "#e5e5e7",
+        "fill": "#0a84ff",
+        "stroke": "#0a84ff",
+        "vertex": "#98989d",
         "bg": "none",
     },
 }

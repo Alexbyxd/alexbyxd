@@ -52,16 +52,16 @@ YAML_ROWS = [
 
 THEMES = {
     "dark": {
-        "bg":       "#05070c",
-        "panel":    "#0a0f18",
-        "panel2":   "#0f1622",
-        "line":     "#14304f",
-        "muted":    "#5288bb",
-        "text":     "#dbe9ff",
-        "portrait": "#2f7cf6",   # midnight blue portrait
-        "chrome":   "#38bdf8",   # cyan support accent
-        "accent":   "#2f7cf6",
-        "shadow":   "#020306",
+        "bg":       "#1e1e1e",
+        "panel":    "#232323",
+        "panel2":   "#2c2c2e",
+        "line":     "#38383a",
+        "muted":    "#98989d",
+        "text":     "#e5e5e7",
+        "portrait": "#0a84ff",   # macOS system blue (dark)
+        "chrome":   "#0a84ff",   # single accent, no second hue
+        "accent":   "#0a84ff",
+        "shadow":   "#161616",
     },
 }
 
@@ -200,19 +200,11 @@ def render_svg(
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">'
         f'<feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="{t["shadow"]}" '
         'flood-opacity=".45"/></filter>',
-        '<filter id="glowPink" x="-100%" y="-100%" width="300%" height="300%">'
-        f'<feGaussianBlur stdDeviation="3" result="b"/><feFlood flood-color="{t["portrait"]}" '
-        'flood-opacity=".55"/><feComposite in2="b" operator="in"/>'
-        '<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
-        '<filter id="glowCyan" x="-100%" y="-100%" width="300%" height="300%">'
-        f'<feGaussianBlur stdDeviation="2.5" result="b"/><feFlood flood-color="{t["chrome"]}" '
-        'flood-opacity=".55"/><feComposite in2="b" operator="in"/>'
-        '<feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
         '<clipPath id="visualClip"><rect x="49" y="124" width="390" height="414" rx="3"/></clipPath>',
         '<linearGradient id="scanbeam" x1="0" x2="0" y1="0" y2="1">'
-        f'<stop offset="0%" stop-color="{t["chrome"]}" stop-opacity="0"/>'
-        f'<stop offset="50%" stop-color="{t["portrait"]}" stop-opacity="0.25"/>'
-        f'<stop offset="100%" stop-color="{t["chrome"]}" stop-opacity="0.6"/>'
+        '<stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>'
+        '<stop offset="50%" stop-color="#ffffff" stop-opacity="0.05"/>'
+        '<stop offset="100%" stop-color="#ffffff" stop-opacity="0.1"/>'
         '</linearGradient>',
         "</defs>",
 
@@ -300,7 +292,7 @@ def render_svg(
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">[YAML]</text>',
         f'<rect x="996" y="94" width="132" height="24" rx="12" fill="{t["portrait"]}" opacity=".18" '
         f'stroke="{t["portrait"]}"/>',
-        f'<text x="1062" y="111" text-anchor="middle" fill="{t["portrait"]}" '
+        f'<text x="1062" y="111" text-anchor="middle" fill="{t["text"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="13" '
         'font-weight="700">@Alexbyxd</text>',
     ])
@@ -314,7 +306,7 @@ def render_svg(
             text_x = 525.0
         else:
             content = (
-                f'<tspan fill="{t["portrait"]}">{html.escape(key)}: </tspan>'
+                f'<tspan fill="{t["muted"]}">{html.escape(key)}: </tspan>'
                 f'<tspan fill="{t["text"]}">{html.escape(value)}</tspan>'
             )
             text_x = 542.0
@@ -343,7 +335,7 @@ def render_svg(
         f'<rect x="485" y="533" width="72" height="20" rx="3" fill="{t["portrait"]}"/>',
         f'<text x="521" y="547" text-anchor="middle" fill="{t["bg"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11" font-weight="700">NORMAL</text>',
-        f'<text x="569" y="547" fill="{t["text"]}" '
+        f'<text x="569" y="547" fill="{t["bg"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="12" font-weight="600">profile.yml</text>',
         f'<text x="740" y="547" fill="{t["muted"]}" '
         'font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="11">[utf-8]</text>',
