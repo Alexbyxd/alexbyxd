@@ -1,12 +1,7 @@
 <div align="center">
 
 <!-- BANNER: vim profile.yml with animated particle morphing -->
-<a href="https://github.com/Alexbyxd">
-  <img src="assets/banner-dark.svg" width="960" alt="Alex Baltazar Castellon — Live System Profile">
-</a>
-
-<br><br>
-
+<a href="https://github.com/Alexbyxd"><img src="assets/banner-dark.svg" width="960" alt="Alex Baltazar Castellon — Live System Profile"></a><br>
 <img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=0a84ff&label=profile+views" alt="profile views">
 
 </div>
