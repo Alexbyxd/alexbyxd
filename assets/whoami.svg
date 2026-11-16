@@ -1,126 +1,66 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-labelledby="title desc">
-  <title id="title">Alex Baltazar Castellon — Full Stack Developer</title>
-  <desc id="desc">Flat dark terminal profile card with animated waveforms.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-labelledby="title desc">
+  <title id="title">Alex Baltazar Castellon — macOS Terminal session</title>
+  <desc id="desc">macOS Terminal window with a zsh session: whoami, mission, expertise and uptime.</desc>
 
   <style>
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
+    .mono { font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
     @keyframes blink {
       0%, 49% { opacity: 1; }
       50%, 100% { opacity: 0; }
     }
-    .cursor-blink { animation: blink 1s infinite; }
+    .cursor-blink { animation: blink 1.1s infinite; }
   </style>
 
-  <!-- Background Base -->
-  <rect width="960" height="430" rx="18" fill="#000000"/>
-  <!-- Outer frame -->
-  <rect x="9" y="9" width="942" height="412" rx="13" fill="none" stroke="#3a3a3c" stroke-width="2"/>
+  <!-- ═══ TERMINAL WINDOW ═══ -->
+  <rect width="960" height="380" rx="11" fill="#000000"/>
+  <rect x="0.5" y="0.5" width="959" height="379" rx="10.5" fill="none" stroke="#3a3a3c"/>
 
-  <!-- Traffic lights -->
-  <circle cx="35" cy="35" r="5" fill="#FF5F57"/>
-  <circle cx="54" cy="35" r="5" fill="#FEBC2E"/>
-  <circle cx="73" cy="35" r="5" fill="#28C840"/>
-  <text x="98" y="41" fill="#98989d" class="mono" font-size="14">alexbyxd  ·  profile shell  ·  online</text>
-  <path d="M29 58H931" stroke="#3a3a3c" stroke-width="1.2"/>
+  <!-- Title bar -->
+  <circle cx="20" cy="18" r="6.5" fill="#FF5F57"/>
+  <circle cx="40" cy="18" r="6.5" fill="#FEBC2E"/>
+  <circle cx="60" cy="18" r="6.5" fill="#28C840"/>
+  <text x="480" y="22" text-anchor="middle" fill="#98989d" class="mono" font-size="12">alex@dev — -zsh — 80×24</text>
+  <path d="M0.5 36H959.5" stroke="#3a3a3c"/>
 
-  <!-- ═══ MAIN LEFT TERMINAL PANEL ═══ -->
-  <rect x="29" y="74" width="600" height="326" rx="9" fill="#000000" stroke="#3a3a3c" stroke-width="1.3"/>
+  <!-- ═══ SESSION ═══ -->
+  <!-- last login -->
+  <text x="24" y="62" fill="#98989d" class="mono" font-size="14">Last login: Sun Nov 16 01:12:04 on ttys001</text>
 
-  <!-- ❯ whoami command + blinking cursor -->
-  <text x="50" y="110" fill="#0a84ff" class="mono" font-size="19" font-weight="700">❯ whoami</text>
-  <rect x="156" y="94" width="8" height="18" fill="#0a84ff" class="cursor-blink"/>
+  <!-- whoami with verbose flag -->
+  <text x="24" y="88" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="88" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <text x="148" y="88" fill="#f2f2f7" class="mono" font-size="15">whoami --verbose</text>
+  <text x="24" y="114" fill="#f2f2f7" class="mono" font-size="15" font-weight="700">alex_baltazar</text>
+  <text x="152" y="114" fill="#98989d" class="mono" font-size="15">·  full stack developer  ·  Bolivia 🇧🇴</text>
 
-  <!-- Output line -->
-  <text x="50" y="142" fill="#f2f2f7" class="mono" font-size="17">alex_baltazar</text>
-  <text x="206" y="142" fill="#98989d" class="mono" font-size="17">—</text>
-  <text x="231" y="142" fill="#f2f2f7" class="mono" font-size="17" font-weight="600">Full Stack Developer</text>
+  <!-- cat mission.txt -->
+  <text x="24" y="140" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="140" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <text x="148" y="140" fill="#f2f2f7" class="mono" font-size="15">cat mission.txt</text>
+  <text x="24" y="166" fill="#f2f2f7" class="mono" font-size="15">build real systems end-to-end</text>
 
-  <!-- Separator -->
-  <path d="M50 162H610" stroke="#3a3a3c"/>
+  <!-- ls -F expertise/ -->
+  <text x="24" y="192" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="192" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <text x="148" y="192" fill="#f2f2f7" class="mono" font-size="15">ls -F expertise/</text>
 
-  <!-- context + mission -->
-  <text x="50"  y="193" fill="#98989d" class="mono" font-size="16">context:</text>
-  <text x="175" y="193" fill="#f2f2f7" class="mono" font-size="16" font-weight="600">Bolivia 🇧🇴</text>
-  <text x="50"  y="222" fill="#98989d" class="mono" font-size="16">mission:</text>
-  <text x="175" y="222" fill="#f2f2f7" class="mono" font-size="16">build real systems end-to-end</text>
+  <text x="24" y="218" fill="#0a84ff" class="mono" font-size="15" font-weight="700">fullstack/</text>
+  <text x="140" y="218" fill="#98989d" class="mono" font-size="15">Next.js · NestJS · Laravel · Django</text>
 
-  <!-- Separator -->
-  <path d="M50 242H610" stroke="#3a3a3c"/>
+  <text x="24" y="244" fill="#0a84ff" class="mono" font-size="15" font-weight="700">mobile/</text>
+  <text x="140" y="244" fill="#98989d" class="mono" font-size="15">Flutter · Dart</text>
 
-  <!-- ❯ ls expertise/ command -->
-  <text x="50" y="271" fill="#0a84ff" class="mono" font-size="19" font-weight="700">❯ ls expertise/</text>
-  <rect x="236" y="255" width="8" height="18" fill="#0a84ff" class="cursor-blink"/>
+  <text x="24" y="270" fill="#0a84ff" class="mono" font-size="15" font-weight="700">learning/</text>
+  <text x="140" y="270" fill="#98989d" class="mono" font-size="15">DevOps · Cloud · AWS · GCP</text>
 
-  <!-- Folder rows -->
-  <text x="50"  y="304" fill="#f2f2f7" class="mono" font-size="15" font-weight="600">fullstack/</text>
-  <text x="195" y="304" fill="#98989d" class="mono" font-size="15">Next.js · NestJS · Laravel · Django</text>
+  <!-- uptime -->
+  <text x="24" y="296" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="296" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <text x="148" y="296" fill="#f2f2f7" class="mono" font-size="15">uptime</text>
+  <text x="24" y="322" fill="#98989d" class="mono" font-size="15">14:32  up 92 days,  4:12,  2 users,  load averages: 0.42 0.38 0.31</text>
 
-  <text x="50"  y="333" fill="#f2f2f7" class="mono" font-size="15" font-weight="600">mobile/</text>
-  <text x="195" y="333" fill="#98989d" class="mono" font-size="15">Flutter · Dart · Docker</text>
-
-  <text x="50"  y="362" fill="#f2f2f7" class="mono" font-size="15" font-weight="600">learning/</text>
-  <text x="195" y="362" fill="#98989d" class="mono" font-size="15" font-weight="700">DevOps · Cloud · AWS · GCP</text>
-
-  <!-- ═══ RIGHT PANEL: SYSTEM SIGNALS ═══ -->
-  <rect x="647" y="74" width="284" height="326" rx="9" fill="#000000" stroke="#3a3a3c" stroke-width="1.3"/>
-
-  <text x="670" y="110" fill="#f2f2f7" class="mono" font-size="16" font-weight="700">stack runtime</text>
-  <rect x="850" y="96" width="65" height="18" rx="4" fill="#000000" stroke="#48484a"/>
-  <text x="882" y="109" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="10" font-weight="700">ONLINE</text>
-
-  <!-- Flat animated oscilloscope waves (one accent, width + opacity differ) -->
-  <g transform="translate(670, 160)">
-    <!-- Wave 1 (accent, heavy) -->
-    <path d="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" fill="none" stroke="#0a84ff" stroke-width="3">
-      <animate attributeName="d" 
-        values="M0,35 Q30,5 60,35 T120,35 T180,35 T240,35;
-                M0,35 Q30,65 60,35 T120,35 T180,35 T240,35;
-                M0,35 Q30,5 60,35 T120,35 T180,35 T240,35" 
-        dur="3s" repeatCount="indefinite" ease="easeInOut"/>
-    </path>
-    <!-- Wave 2 (accent, light) -->
-    <path d="M0,45 Q30,75 60,45 T120,45 T180,45 T240,45" fill="none" stroke="#0a84ff" stroke-width="1.4" opacity="0.55">
-      <animate attributeName="d" 
-        values="M0,45 Q30,75 60,45 T120,45 T180,45 T240,45;
-                M0,45 Q30,15 60,45 T120,45 T180,45 T240,45;
-                M0,45 Q30,75 60,45 T120,45 T180,45 T240,45" 
-        dur="2.4s" repeatCount="indefinite" ease="easeInOut"/>
-    </path>
-  </g>
-
-  <!-- Blinking command line execution -->
-  <g transform="translate(670, 255)">
-    <rect x="0" y="0" width="8" height="15" fill="#0a84ff" class="cursor-blink"/>
-    <text x="14" y="12" fill="#98989d" class="mono" font-size="13">systemctl status --all</text>
-  </g>
-
-  <!-- Tech tags grid -->
-  <g transform="translate(670, 285)">
-    <rect x="0"   y="0" width="56" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="28"  y="14" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">NestJS</text>
-
-    <rect x="64"  y="0" width="56" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="92"  y="14" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">Next.js</text>
-
-    <rect x="128" y="0" width="56" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="156" y="14" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11" font-weight="700">Flutter</text>
-
-    <rect x="192" y="0" width="46" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="215" y="14" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Docker</text>
-
-    <rect x="0"   y="28" width="58" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="29"  y="42" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Laravel</text>
-
-    <rect x="66"  y="28" width="54" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="93"  y="42" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">Django</text>
-
-    <rect x="128" y="28" width="80" height="20" rx="4" fill="#000000" stroke="#48484a"/>
-    <text x="168" y="42" text-anchor="middle" fill="#f2f2f7" class="mono" font-size="11">PostgreSQL</text>
-  </g>
-
-  <!-- Live pulse text indicator -->
-  <circle cx="676" cy="376" r="4" fill="#30d158">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <text x="688" y="380" fill="#98989d" class="mono" font-size="13">status: always shipping ⚡</text>
+  <!-- idle prompt + block cursor -->
+  <text x="24" y="348" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="348" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <rect x="148" y="334" width="9" height="18" fill="#0a84ff" class="cursor-blink"/>
 </svg>
