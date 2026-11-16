@@ -7,13 +7,6 @@
 
 <br><br>
 
-<!-- STARSHIP INTERACTIVE TERMINAL COMPONENT -->
-<a href="https://github.com/Alexbyxd">
-  <img src="assets/terminal.svg" width="960" alt="Starship Terminal Session — alex@dev">
-</a>
-
-<br>
-
 <img src="https://komarev.com/ghpvc/?username=alexbyxd&style=flat&color=0a84ff&label=profile+views" alt="profile views">
 
 </div>
@@ -23,7 +16,7 @@
 ## `$ whoami`
 
 <p align="center">
-  <img src="assets/whoami.svg" width="960" alt="Terminal profile card — Alex Baltazar Castellon">
+  <img src="assets/whoami.svg" width="960" alt="macOS Terminal session — alex@dev">
 </p>
 
 <br>
@@ -57,7 +50,7 @@
 
 <br>
 
-<img src="https://streak-stats.demolab.com?user=alexbyxd&theme=dark&hide_border=true&background=1e1e1e&ring=0a84ff&fire=0a84ff&currStreakLabel=0a84ff&sideLabels=98989d&dates=98989d" alt="GitHub Streak">
+<img src="https://streak-stats.demolab.com?user=alexbyxd&theme=dark&hide_border=true&background=000000&ring=0a84ff&fire=0a84ff&currStreakLabel=0a84ff&sideLabels=98989d&dates=98989d" alt="GitHub Streak">
 
 </div>
 
