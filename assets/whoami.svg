@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 404" width="960" height="404" role="img" aria-labelledby="title desc">
   <title id="title">Alex Baltazar Castellon — macOS Terminal session</title>
-  <desc id="desc">macOS Terminal window running a zsh session: a typed command, an animated fastfetch block with ASCII art, and a blinking block cursor.</desc>
+  <desc id="desc">macOS Terminal window with a tmux split: cmatrix character rain in the left pane and a zsh session on the right.</desc>
 
   <style>
     .mono { font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
@@ -12,129 +12,207 @@
   </style>
 
   <defs>
-    <clipPath id="type-fastfetch">
-      <rect x="147" y="74" width="0" height="20">
-        <animate attributeName="width" values="0;88" dur="0.9s" begin="0.5s" fill="freeze"/>
+    <clipPath id="type-rain-cmd">
+      <rect x="142" y="72" width="0" height="20">
+        <animate attributeName="width" values="0;166" dur="0.8s" begin="0.4s" fill="freeze"/>
       </rect>
     </clipPath>
-    <clipPath id="type-mission">
-      <rect x="147" y="302" width="0" height="20">
-        <animate attributeName="width" values="0;146" dur="0.7s" begin="2.6s" fill="freeze"/>
+    <clipPath id="type-who-cmd">
+      <rect x="452.8" y="72" width="0" height="20">
+        <animate attributeName="width" values="0;58" dur="0.6s" begin="0.9s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="rainClip"><rect x="24" y="108" width="269" height="247"/></clipPath>
+    <clipPath id="type-mission-cmd">
+      <rect x="452.8" y="306" width="0" height="20">
+        <animate attributeName="width" values="0;146" dur="0.7s" begin="3.1s" fill="freeze"/>
       </rect>
     </clipPath>
   </defs>
 
-  <rect width="960" height="400" rx="11" fill="#000000"/>
-  <rect x="0.5" y="0.5" width="959" height="399" rx="10.5" fill="none" stroke="#3a3a3c"/>
+  <rect width="960" height="404" rx="11" fill="#000000"/>
+  <rect x="0.5" y="0.5" width="959" height="403" rx="10.5" fill="none" stroke="#3a3a3c"/>
 
   <circle cx="20" cy="18" r="6.5" fill="#FF5F57"/>
   <circle cx="40" cy="18" r="6.5" fill="#FEBC2E"/>
   <circle cx="60" cy="18" r="6.5" fill="#28C840"/>
-  <text x="480" y="22" text-anchor="middle" fill="#98989d" class="mono" font-size="12">alex@dev — -zsh — 100×30</text>
+  <text x="480" y="22" text-anchor="middle" fill="#98989d" class="mono" font-size="12">alex@dev — -zsh — 120×36</text>
   <path d="M0.5 36H959.5" stroke="#3a3a3c"/>
 
   <text x="24" y="62" fill="#98989d" class="mono" font-size="14">Last login: Sun Nov 16 01:12:04 on ttys001</text>
 
+  <!-- left pane: cmatrix -->
   <text x="24" y="88" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
   <text x="104" y="88" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <g clip-path="url(#type-fastfetch)">
-    <text x="147" y="88" fill="#f2f2f7" class="mono" font-size="15">fastfetch</text>
+  <g clip-path="url(#type-rain-cmd)">
+    <text x="142" y="88" fill="#f2f2f7" class="mono" font-size="15">cmatrix --speed 4</text>
+  </g>
+
+  <!-- tmux split -->
+  <path d="M304.8 76V380" stroke="#2f2f31"/>
+
+  <!-- right pane: zsh session -->
+  <text x="334.8" y="88" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="414.8" y="88" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <g clip-path="url(#type-who-cmd)">
+    <text x="452.8" y="88" fill="#f2f2f7" class="mono" font-size="15">whoami</text>
   </g>
 
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.5s" fill="freeze"/>
-    <text x="24" y="124" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
-  </g>
-  <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.6s" fill="freeze"/>
-    <text x="24" y="144" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#98989d">alex@dev zsh</tspan>          |</text>
+    <text x="334.8" y="124" fill="#f2f2f7" class="mono" font-size="16" font-weight="700">alex_baltazar</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.7s" fill="freeze"/>
-    <text x="24" y="164" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
+    <text x="334.8" y="144" fill="#98989d" class="mono" font-size="13">full stack developer · Bolivia 🇧🇴</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.8s" fill="freeze"/>
-    <text x="24" y="184" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#f2f2f7">$ whoami</tspan>              |</text>
+    <text x="334.8" y="164" fill="#3a3a3c" class="mono" font-size="13">──────────────────────────</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.9s" fill="freeze"/>
-    <text x="24" y="204" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#f2f2f7">alex_baltazar</tspan>         |</text>
+    <text x="334.8" y="184" fill="#98989d" class="mono" font-size="13">OS</text>
+    <text x="434.8" y="184" fill="#f2f2f7" class="mono" font-size="13">macOS 26.2 · arm64</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.0s" fill="freeze"/>
-    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [##......]  42%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.0s"/></text>
-    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [######..]  71%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.3s"/></text>
-    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [###.....]  38%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.6s"/></text>
-    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [#####...]  59%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.9s"/></text>
+    <text x="334.8" y="204" fill="#98989d" class="mono" font-size="13">Host</text>
+    <text x="434.8" y="204" fill="#f2f2f7" class="mono" font-size="13">MacBook Pro · M4</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.1s" fill="freeze"/>
-    <text x="24" y="244" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
+    <text x="334.8" y="224" fill="#98989d" class="mono" font-size="13">Shell</text>
+    <text x="434.8" y="224" fill="#f2f2f7" class="mono" font-size="13">zsh 5.9</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.2s" fill="freeze"/>
-    <text x="24" y="264" fill="#3a3a3c" class="mono" font-size="13">  /__________________________\</text>
+    <text x="334.8" y="244" fill="#98989d" class="mono" font-size="13">Uptime</text>
+    <text x="434.8" y="244" fill="#f2f2f7" class="mono" font-size="13">92 days, 4:12</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.3s" fill="freeze"/>
-    <text x="24" y="284" fill="#3a3a3c" class="mono" font-size="13"> /____________________________\</text>
+    <text x="334.8" y="264" fill="#98989d" class="mono" font-size="13">Brew</text>
+    <text x="434.8" y="264" fill="#f2f2f7" class="mono" font-size="13">214 packages</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.4s" fill="freeze"/>
+    <text x="334.8" y="284" fill="#98989d" class="mono" font-size="13">Stack</text>
+    <text x="434.8" y="284" fill="#f2f2f7" class="mono" font-size="13">Next.js · NestJS · Laravel · Flutter</text>
   </g>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.5s" fill="freeze"/>
-    <text x="330" y="124" fill="#f2f2f7" class="mono" font-size="16" font-weight="700">alex_baltazar</text>
+  <text x="334.8" y="320" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="414.8" y="320" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <g clip-path="url(#type-mission-cmd)">
+    <text x="452.8" y="320" fill="#f2f2f7" class="mono" font-size="15">cat mission.txt</text>
   </g>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.6s" fill="freeze"/>
-    <text x="330" y="144" fill="#98989d" class="mono" font-size="13">full stack developer · Bolivia 🇧🇴</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.7s" fill="freeze"/>
-    <text x="330" y="164" fill="#3a3a3c" class="mono" font-size="13">──────────────────────────</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.8s" fill="freeze"/>
-    <text x="330" y="184" fill="#98989d" class="mono" font-size="13">OS</text>
-    <text x="430" y="184" fill="#f2f2f7" class="mono" font-size="13">macOS 26.2 · arm64</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.9s" fill="freeze"/>
-    <text x="330" y="204" fill="#98989d" class="mono" font-size="13">Host</text>
-    <text x="430" y="204" fill="#f2f2f7" class="mono" font-size="13">MacBook Pro · M4</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.0s" fill="freeze"/>
-    <text x="330" y="224" fill="#98989d" class="mono" font-size="13">Shell</text>
-    <text x="430" y="224" fill="#f2f2f7" class="mono" font-size="13">zsh 5.9</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.1s" fill="freeze"/>
-    <text x="330" y="244" fill="#98989d" class="mono" font-size="13">Uptime</text>
-    <text x="430" y="244" fill="#f2f2f7" class="mono" font-size="13">92 days, 4:12</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.2s" fill="freeze"/>
-    <text x="330" y="264" fill="#98989d" class="mono" font-size="13">Brew</text>
-    <text x="430" y="264" fill="#f2f2f7" class="mono" font-size="13">214 packages</text>
-  </g>
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.3s" fill="freeze"/>
-    <text x="330" y="284" fill="#98989d" class="mono" font-size="13">Stack</text>
-    <text x="430" y="284" fill="#f2f2f7" class="mono" font-size="13">Next.js · NestJS · Laravel · Flutter</text>
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="3.9s" fill="freeze"/>
+    <text x="334.8" y="346" fill="#f2f2f7" class="mono" font-size="15">build real systems end-to-end</text>
   </g>
 
-  <text x="24" y="316" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="316" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <g clip-path="url(#type-mission)">
-    <text x="147" y="316" fill="#f2f2f7" class="mono" font-size="15">cat mission.txt</text>
-  </g>
+  <text x="334.8" y="372" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="414.8" y="372" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <rect x="452.8" y="358" width="9" height="18" fill="#0a84ff" class="cursor-blink"/>
   <g opacity="0">
-    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="3.4s" fill="freeze"/>
-    <text x="24" y="342" fill="#f2f2f7" class="mono" font-size="15">build real systems end-to-end</text>
+    <animate attributeName="opacity" values="0;1" dur="0.6s" begin="1.2s" fill="freeze"/>
+  <g clip-path="url(#rainClip)">
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-3.7s" repeatCount="indefinite"/>
+<text x="24" y="108" class="mono" font-size="14"><tspan x="24" y="108" fill="#0a84ff" fill-opacity="0.06">z</tspan><tspan x="24" y="127" fill="#0a84ff" fill-opacity="0.15">&amp;</tspan><tspan x="24" y="146" fill="#0a84ff" fill-opacity="0.27">d</tspan><tspan x="24" y="165" fill="#0a84ff" fill-opacity="0.39">e</tspan><tspan x="24" y="184" fill="#0a84ff" fill-opacity="0.51">;</tspan><tspan x="24" y="203" fill="#0a84ff">8</tspan><tspan x="24" y="222" fill="#f2f2f7">g</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-2.27s" repeatCount="indefinite"/>
+<text x="32" y="108" class="mono" font-size="14"><tspan x="32" y="108" fill="#0a84ff" fill-opacity="0.06">6</tspan><tspan x="32" y="127" fill="#0a84ff" fill-opacity="0.15">n</tspan><tspan x="32" y="146" fill="#0a84ff" fill-opacity="0.27">c</tspan><tspan x="32" y="165" fill="#0a84ff" fill-opacity="0.39">f</tspan><tspan x="32" y="184" fill="#0a84ff" fill-opacity="0.51">1</tspan><tspan x="32" y="203" fill="#0a84ff">0</tspan><tspan x="32" y="222" fill="#f2f2f7">e</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-0.3s" repeatCount="indefinite"/>
+<text x="41" y="108" class="mono" font-size="14"><tspan x="41" y="108" fill="#0a84ff" fill-opacity="0.06">1</tspan><tspan x="41" y="127" fill="#0a84ff" fill-opacity="0.15">d</tspan><tspan x="41" y="146" fill="#0a84ff" fill-opacity="0.27">;</tspan><tspan x="41" y="165" fill="#0a84ff" fill-opacity="0.39">!</tspan><tspan x="41" y="184" fill="#0a84ff" fill-opacity="0.51">h</tspan><tspan x="41" y="203" fill="#0a84ff">o</tspan><tspan x="41" y="222" fill="#f2f2f7">%</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="5.4s" begin="-5.12s" repeatCount="indefinite"/>
+<text x="49" y="108" class="mono" font-size="14"><tspan x="49" y="108" fill="#0a84ff" fill-opacity="0.06">!</tspan><tspan x="49" y="127" fill="#0a84ff" fill-opacity="0.15">@</tspan><tspan x="49" y="146" fill="#0a84ff" fill-opacity="0.27">z</tspan><tspan x="49" y="165" fill="#0a84ff" fill-opacity="0.39">d</tspan><tspan x="49" y="184" fill="#0a84ff" fill-opacity="0.51">o</tspan><tspan x="49" y="203" fill="#0a84ff">c</tspan><tspan x="49" y="222" fill="#f2f2f7">9</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-0.96s" repeatCount="indefinite"/>
+<text x="58" y="108" class="mono" font-size="14"><tspan x="58" y="108" fill="#0a84ff" fill-opacity="0.06">j</tspan><tspan x="58" y="127" fill="#0a84ff" fill-opacity="0.15">8</tspan><tspan x="58" y="146" fill="#0a84ff" fill-opacity="0.27">h</tspan><tspan x="58" y="165" fill="#0a84ff" fill-opacity="0.39">!</tspan><tspan x="58" y="184" fill="#0a84ff" fill-opacity="0.51">t</tspan><tspan x="58" y="203" fill="#0a84ff">9</tspan><tspan x="58" y="222" fill="#f2f2f7">;</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-0.34s" repeatCount="indefinite"/>
+<text x="66" y="108" class="mono" font-size="14"><tspan x="66" y="108" fill="#0a84ff" fill-opacity="0.06">!</tspan><tspan x="66" y="127" fill="#0a84ff" fill-opacity="0.15">%</tspan><tspan x="66" y="146" fill="#0a84ff" fill-opacity="0.27">m</tspan><tspan x="66" y="165" fill="#0a84ff" fill-opacity="0.39">x</tspan><tspan x="66" y="184" fill="#0a84ff" fill-opacity="0.51">g</tspan><tspan x="66" y="203" fill="#0a84ff">9</tspan><tspan x="66" y="222" fill="#f2f2f7">&lt;</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-1.58s" repeatCount="indefinite"/>
+<text x="74" y="108" class="mono" font-size="14"><tspan x="74" y="108" fill="#0a84ff" fill-opacity="0.06">$</tspan><tspan x="74" y="127" fill="#0a84ff" fill-opacity="0.15">n</tspan><tspan x="74" y="146" fill="#0a84ff" fill-opacity="0.27">5</tspan><tspan x="74" y="165" fill="#0a84ff" fill-opacity="0.39">+</tspan><tspan x="74" y="184" fill="#0a84ff" fill-opacity="0.51">8</tspan><tspan x="74" y="203" fill="#0a84ff">1</tspan><tspan x="74" y="222" fill="#f2f2f7">~</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-1.82s" repeatCount="indefinite"/>
+<text x="83" y="108" class="mono" font-size="14"><tspan x="83" y="108" fill="#0a84ff" fill-opacity="0.06">3</tspan><tspan x="83" y="127" fill="#0a84ff" fill-opacity="0.15">x</tspan><tspan x="83" y="146" fill="#0a84ff" fill-opacity="0.27">t</tspan><tspan x="83" y="165" fill="#0a84ff" fill-opacity="0.39">p</tspan><tspan x="83" y="184" fill="#0a84ff" fill-opacity="0.51">^</tspan><tspan x="83" y="203" fill="#0a84ff">l</tspan><tspan x="83" y="222" fill="#f2f2f7">=</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-0.27s" repeatCount="indefinite"/>
+<text x="91" y="108" class="mono" font-size="14"><tspan x="91" y="108" fill="#0a84ff" fill-opacity="0.06">t</tspan><tspan x="91" y="127" fill="#0a84ff" fill-opacity="0.15">7</tspan><tspan x="91" y="146" fill="#0a84ff" fill-opacity="0.27">5</tspan><tspan x="91" y="165" fill="#0a84ff" fill-opacity="0.39">v</tspan><tspan x="91" y="184" fill="#0a84ff" fill-opacity="0.51">&gt;</tspan><tspan x="91" y="203" fill="#0a84ff">2</tspan><tspan x="91" y="222" fill="#f2f2f7">s</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="5.4s" begin="-5.29s" repeatCount="indefinite"/>
+<text x="100" y="108" class="mono" font-size="14"><tspan x="100" y="108" fill="#0a84ff" fill-opacity="0.06">h</tspan><tspan x="100" y="127" fill="#0a84ff" fill-opacity="0.15">6</tspan><tspan x="100" y="146" fill="#0a84ff" fill-opacity="0.27">0</tspan><tspan x="100" y="165" fill="#0a84ff" fill-opacity="0.39">k</tspan><tspan x="100" y="184" fill="#0a84ff" fill-opacity="0.51">|</tspan><tspan x="100" y="203" fill="#0a84ff">v</tspan><tspan x="100" y="222" fill="#f2f2f7">j</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="4.6s" begin="-1.94s" repeatCount="indefinite"/>
+<text x="108" y="108" class="mono" font-size="14"><tspan x="108" y="108" fill="#0a84ff" fill-opacity="0.06">*</tspan><tspan x="108" y="127" fill="#0a84ff" fill-opacity="0.15">e</tspan><tspan x="108" y="146" fill="#0a84ff" fill-opacity="0.27">|</tspan><tspan x="108" y="165" fill="#0a84ff" fill-opacity="0.39">9</tspan><tspan x="108" y="184" fill="#0a84ff" fill-opacity="0.51">!</tspan><tspan x="108" y="203" fill="#0a84ff">^</tspan><tspan x="108" y="222" fill="#f2f2f7">;</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-1.33s" repeatCount="indefinite"/>
+<text x="116" y="108" class="mono" font-size="14"><tspan x="116" y="108" fill="#0a84ff" fill-opacity="0.06">w</tspan><tspan x="116" y="127" fill="#0a84ff" fill-opacity="0.15">#</tspan><tspan x="116" y="146" fill="#0a84ff" fill-opacity="0.27">5</tspan><tspan x="116" y="165" fill="#0a84ff" fill-opacity="0.39">@</tspan><tspan x="116" y="184" fill="#0a84ff" fill-opacity="0.51">:</tspan><tspan x="116" y="203" fill="#0a84ff">3</tspan><tspan x="116" y="222" fill="#f2f2f7">e</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-2.65s" repeatCount="indefinite"/>
+<text x="125" y="108" class="mono" font-size="14"><tspan x="125" y="108" fill="#0a84ff" fill-opacity="0.06">4</tspan><tspan x="125" y="127" fill="#0a84ff" fill-opacity="0.15">=</tspan><tspan x="125" y="146" fill="#0a84ff" fill-opacity="0.27">*</tspan><tspan x="125" y="165" fill="#0a84ff" fill-opacity="0.39">e</tspan><tspan x="125" y="184" fill="#0a84ff" fill-opacity="0.51">d</tspan><tspan x="125" y="203" fill="#0a84ff">&gt;</tspan><tspan x="125" y="222" fill="#f2f2f7">=</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-2.52s" repeatCount="indefinite"/>
+<text x="133" y="108" class="mono" font-size="14"><tspan x="133" y="108" fill="#0a84ff" fill-opacity="0.06">+</tspan><tspan x="133" y="127" fill="#0a84ff" fill-opacity="0.15">;</tspan><tspan x="133" y="146" fill="#0a84ff" fill-opacity="0.27">2</tspan><tspan x="133" y="165" fill="#0a84ff" fill-opacity="0.39">s</tspan><tspan x="133" y="184" fill="#0a84ff" fill-opacity="0.51">&lt;</tspan><tspan x="133" y="203" fill="#0a84ff">y</tspan><tspan x="133" y="222" fill="#f2f2f7">*</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.9s" begin="-0.09s" repeatCount="indefinite"/>
+<text x="142" y="108" class="mono" font-size="14"><tspan x="142" y="108" fill="#0a84ff" fill-opacity="0.06">3</tspan><tspan x="142" y="127" fill="#0a84ff" fill-opacity="0.15">w</tspan><tspan x="142" y="146" fill="#0a84ff" fill-opacity="0.27">k</tspan><tspan x="142" y="165" fill="#0a84ff" fill-opacity="0.39">$</tspan><tspan x="142" y="184" fill="#0a84ff" fill-opacity="0.51">h</tspan><tspan x="142" y="203" fill="#0a84ff">5</tspan><tspan x="142" y="222" fill="#f2f2f7">d</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-2.54s" repeatCount="indefinite"/>
+<text x="150" y="108" class="mono" font-size="14"><tspan x="150" y="108" fill="#0a84ff" fill-opacity="0.06">i</tspan><tspan x="150" y="127" fill="#0a84ff" fill-opacity="0.15">/</tspan><tspan x="150" y="146" fill="#0a84ff" fill-opacity="0.27">p</tspan><tspan x="150" y="165" fill="#0a84ff" fill-opacity="0.39">z</tspan><tspan x="150" y="184" fill="#0a84ff" fill-opacity="0.51">z</tspan><tspan x="150" y="203" fill="#0a84ff">5</tspan><tspan x="150" y="222" fill="#f2f2f7">f</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-1.48s" repeatCount="indefinite"/>
+<text x="158" y="108" class="mono" font-size="14"><tspan x="158" y="108" fill="#0a84ff" fill-opacity="0.06">9</tspan><tspan x="158" y="127" fill="#0a84ff" fill-opacity="0.15">r</tspan><tspan x="158" y="146" fill="#0a84ff" fill-opacity="0.27">i</tspan><tspan x="158" y="165" fill="#0a84ff" fill-opacity="0.39">;</tspan><tspan x="158" y="184" fill="#0a84ff" fill-opacity="0.51">1</tspan><tspan x="158" y="203" fill="#0a84ff">9</tspan><tspan x="158" y="222" fill="#f2f2f7">r</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="4.6s" begin="-4.54s" repeatCount="indefinite"/>
+<text x="167" y="108" class="mono" font-size="14"><tspan x="167" y="108" fill="#0a84ff" fill-opacity="0.06">+</tspan><tspan x="167" y="127" fill="#0a84ff" fill-opacity="0.15">y</tspan><tspan x="167" y="146" fill="#0a84ff" fill-opacity="0.27">o</tspan><tspan x="167" y="165" fill="#0a84ff" fill-opacity="0.39">j</tspan><tspan x="167" y="184" fill="#0a84ff" fill-opacity="0.51">f</tspan><tspan x="167" y="203" fill="#0a84ff">l</tspan><tspan x="167" y="222" fill="#f2f2f7">j</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-2.17s" repeatCount="indefinite"/>
+<text x="175" y="108" class="mono" font-size="14"><tspan x="175" y="108" fill="#0a84ff" fill-opacity="0.06">a</tspan><tspan x="175" y="127" fill="#0a84ff" fill-opacity="0.15">5</tspan><tspan x="175" y="146" fill="#0a84ff" fill-opacity="0.27">.</tspan><tspan x="175" y="165" fill="#0a84ff" fill-opacity="0.39">@</tspan><tspan x="175" y="184" fill="#0a84ff" fill-opacity="0.51">l</tspan><tspan x="175" y="203" fill="#0a84ff">q</tspan><tspan x="175" y="222" fill="#f2f2f7">s</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-0.41s" repeatCount="indefinite"/>
+<text x="184" y="108" class="mono" font-size="14"><tspan x="184" y="108" fill="#0a84ff" fill-opacity="0.06">8</tspan><tspan x="184" y="127" fill="#0a84ff" fill-opacity="0.15">x</tspan><tspan x="184" y="146" fill="#0a84ff" fill-opacity="0.27">$</tspan><tspan x="184" y="165" fill="#0a84ff" fill-opacity="0.39">!</tspan><tspan x="184" y="184" fill="#0a84ff" fill-opacity="0.51">u</tspan><tspan x="184" y="203" fill="#0a84ff">i</tspan><tspan x="184" y="222" fill="#f2f2f7">=</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="5.4s" begin="-5.13s" repeatCount="indefinite"/>
+<text x="192" y="108" class="mono" font-size="14"><tspan x="192" y="108" fill="#0a84ff" fill-opacity="0.06">&amp;</tspan><tspan x="192" y="127" fill="#0a84ff" fill-opacity="0.15">+</tspan><tspan x="192" y="146" fill="#0a84ff" fill-opacity="0.27">/</tspan><tspan x="192" y="165" fill="#0a84ff" fill-opacity="0.39">d</tspan><tspan x="192" y="184" fill="#0a84ff" fill-opacity="0.51">3</tspan><tspan x="192" y="203" fill="#0a84ff">~</tspan><tspan x="192" y="222" fill="#f2f2f7">+</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="5.4s" begin="-2.12s" repeatCount="indefinite"/>
+<text x="200" y="108" class="mono" font-size="14"><tspan x="200" y="108" fill="#0a84ff" fill-opacity="0.06">z</tspan><tspan x="200" y="127" fill="#0a84ff" fill-opacity="0.15">z</tspan><tspan x="200" y="146" fill="#0a84ff" fill-opacity="0.27">g</tspan><tspan x="200" y="165" fill="#0a84ff" fill-opacity="0.39">4</tspan><tspan x="200" y="184" fill="#0a84ff" fill-opacity="0.51">%</tspan><tspan x="200" y="203" fill="#0a84ff">z</tspan><tspan x="200" y="222" fill="#f2f2f7">d</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-0.22s" repeatCount="indefinite"/>
+<text x="209" y="108" class="mono" font-size="14"><tspan x="209" y="108" fill="#0a84ff" fill-opacity="0.06">n</tspan><tspan x="209" y="127" fill="#0a84ff" fill-opacity="0.15">2</tspan><tspan x="209" y="146" fill="#0a84ff" fill-opacity="0.27">k</tspan><tspan x="209" y="165" fill="#0a84ff" fill-opacity="0.39">h</tspan><tspan x="209" y="184" fill="#0a84ff" fill-opacity="0.51">v</tspan><tspan x="209" y="203" fill="#0a84ff">#</tspan><tspan x="209" y="222" fill="#f2f2f7">d</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-0.0s" repeatCount="indefinite"/>
+<text x="217" y="108" class="mono" font-size="14"><tspan x="217" y="108" fill="#0a84ff" fill-opacity="0.06">j</tspan><tspan x="217" y="127" fill="#0a84ff" fill-opacity="0.15">8</tspan><tspan x="217" y="146" fill="#0a84ff" fill-opacity="0.27">g</tspan><tspan x="217" y="165" fill="#0a84ff" fill-opacity="0.39">x</tspan><tspan x="217" y="184" fill="#0a84ff" fill-opacity="0.51">$</tspan><tspan x="217" y="203" fill="#0a84ff">b</tspan><tspan x="217" y="222" fill="#f2f2f7">e</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-2.03s" repeatCount="indefinite"/>
+<text x="226" y="108" class="mono" font-size="14"><tspan x="226" y="108" fill="#0a84ff" fill-opacity="0.06">j</tspan><tspan x="226" y="127" fill="#0a84ff" fill-opacity="0.15">%</tspan><tspan x="226" y="146" fill="#0a84ff" fill-opacity="0.27">q</tspan><tspan x="226" y="165" fill="#0a84ff" fill-opacity="0.39">w</tspan><tspan x="226" y="184" fill="#0a84ff" fill-opacity="0.51">#</tspan><tspan x="226" y="203" fill="#0a84ff">x</tspan><tspan x="226" y="222" fill="#f2f2f7">4</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-0.32s" repeatCount="indefinite"/>
+<text x="234" y="108" class="mono" font-size="14"><tspan x="234" y="108" fill="#0a84ff" fill-opacity="0.06">5</tspan><tspan x="234" y="127" fill="#0a84ff" fill-opacity="0.15">3</tspan><tspan x="234" y="146" fill="#0a84ff" fill-opacity="0.27">4</tspan><tspan x="234" y="165" fill="#0a84ff" fill-opacity="0.39">4</tspan><tspan x="234" y="184" fill="#0a84ff" fill-opacity="0.51">t</tspan><tspan x="234" y="203" fill="#0a84ff">f</tspan><tspan x="234" y="222" fill="#f2f2f7">j</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-2.1s" repeatCount="indefinite"/>
+<text x="242" y="108" class="mono" font-size="14"><tspan x="242" y="108" fill="#0a84ff" fill-opacity="0.06">/</tspan><tspan x="242" y="127" fill="#0a84ff" fill-opacity="0.15">q</tspan><tspan x="242" y="146" fill="#0a84ff" fill-opacity="0.27">4</tspan><tspan x="242" y="165" fill="#0a84ff" fill-opacity="0.39">.</tspan><tspan x="242" y="184" fill="#0a84ff" fill-opacity="0.51">=</tspan><tspan x="242" y="203" fill="#0a84ff">k</tspan><tspan x="242" y="222" fill="#f2f2f7">7</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="2.8s" begin="-0.57s" repeatCount="indefinite"/>
+<text x="251" y="108" class="mono" font-size="14"><tspan x="251" y="108" fill="#0a84ff" fill-opacity="0.06">7</tspan><tspan x="251" y="127" fill="#0a84ff" fill-opacity="0.15">x</tspan><tspan x="251" y="146" fill="#0a84ff" fill-opacity="0.27">j</tspan><tspan x="251" y="165" fill="#0a84ff" fill-opacity="0.39">=</tspan><tspan x="251" y="184" fill="#0a84ff" fill-opacity="0.51">8</tspan><tspan x="251" y="203" fill="#0a84ff">b</tspan><tspan x="251" y="222" fill="#f2f2f7">|</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="5.4s" begin="-1.61s" repeatCount="indefinite"/>
+<text x="259" y="108" class="mono" font-size="14"><tspan x="259" y="108" fill="#0a84ff" fill-opacity="0.06">&amp;</tspan><tspan x="259" y="127" fill="#0a84ff" fill-opacity="0.15">f</tspan><tspan x="259" y="146" fill="#0a84ff" fill-opacity="0.27">=</tspan><tspan x="259" y="165" fill="#0a84ff" fill-opacity="0.39">,</tspan><tspan x="259" y="184" fill="#0a84ff" fill-opacity="0.51">q</tspan><tspan x="259" y="203" fill="#0a84ff">7</tspan><tspan x="259" y="222" fill="#f2f2f7">x</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-1.17s" repeatCount="indefinite"/>
+<text x="268" y="108" class="mono" font-size="14"><tspan x="268" y="108" fill="#0a84ff" fill-opacity="0.06">o</tspan><tspan x="268" y="127" fill="#0a84ff" fill-opacity="0.15">8</tspan><tspan x="268" y="146" fill="#0a84ff" fill-opacity="0.27">8</tspan><tspan x="268" y="165" fill="#0a84ff" fill-opacity="0.39">~</tspan><tspan x="268" y="184" fill="#0a84ff" fill-opacity="0.51">6</tspan><tspan x="268" y="203" fill="#0a84ff">v</tspan><tspan x="268" y="222" fill="#f2f2f7">%</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="3.3s" begin="-2.02s" repeatCount="indefinite"/>
+<text x="276" y="108" class="mono" font-size="14"><tspan x="276" y="108" fill="#0a84ff" fill-opacity="0.06">^</tspan><tspan x="276" y="127" fill="#0a84ff" fill-opacity="0.15">|</tspan><tspan x="276" y="146" fill="#0a84ff" fill-opacity="0.27">,</tspan><tspan x="276" y="165" fill="#0a84ff" fill-opacity="0.39">m</tspan><tspan x="276" y="184" fill="#0a84ff" fill-opacity="0.51">:</tspan><tspan x="276" y="203" fill="#0a84ff">p</tspan><tspan x="276" y="222" fill="#f2f2f7">;</tspan></text>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 -133;0 247" dur="4.6s" begin="-3.4s" repeatCount="indefinite"/>
+<text x="284" y="108" class="mono" font-size="14"><tspan x="284" y="108" fill="#0a84ff" fill-opacity="0.06">o</tspan><tspan x="284" y="127" fill="#0a84ff" fill-opacity="0.15">m</tspan><tspan x="284" y="146" fill="#0a84ff" fill-opacity="0.27">7</tspan><tspan x="284" y="165" fill="#0a84ff" fill-opacity="0.39">5</tspan><tspan x="284" y="184" fill="#0a84ff" fill-opacity="0.51">w</tspan><tspan x="284" y="203" fill="#0a84ff">&gt;</tspan><tspan x="284" y="222" fill="#f2f2f7">b</tspan></text>
+    </g>
   </g>
-
-  <text x="24" y="368" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="368" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <rect x="147" y="354" width="9" height="18" fill="#0a84ff" class="cursor-blink"/>
+  </g>
 </svg>
