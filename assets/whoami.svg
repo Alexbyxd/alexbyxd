@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" width="960" height="380" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" width="960" height="400" role="img" aria-labelledby="title desc">
   <title id="title">Alex Baltazar Castellon — macOS Terminal session</title>
-  <desc id="desc">macOS Terminal window with a zsh session: whoami, mission, expertise and uptime.</desc>
+  <desc id="desc">macOS Terminal window running a zsh session: a typed command, an animated fastfetch block with ASCII art, and a blinking block cursor.</desc>
 
   <style>
     .mono { font-family: "SF Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, "Fira Code", monospace; }
@@ -11,56 +11,130 @@
     .cursor-blink { animation: blink 1.1s infinite; }
   </style>
 
-  <!-- ═══ TERMINAL WINDOW ═══ -->
-  <rect width="960" height="380" rx="11" fill="#000000"/>
-  <rect x="0.5" y="0.5" width="959" height="379" rx="10.5" fill="none" stroke="#3a3a3c"/>
+  <defs>
+    <clipPath id="type-fastfetch">
+      <rect x="147" y="74" width="0" height="20">
+        <animate attributeName="width" values="0;88" dur="0.9s" begin="0.5s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <clipPath id="type-mission">
+      <rect x="147" y="302" width="0" height="20">
+        <animate attributeName="width" values="0;146" dur="0.7s" begin="2.6s" fill="freeze"/>
+      </rect>
+    </clipPath>
+  </defs>
 
-  <!-- Title bar -->
+  <rect width="960" height="400" rx="11" fill="#000000"/>
+  <rect x="0.5" y="0.5" width="959" height="399" rx="10.5" fill="none" stroke="#3a3a3c"/>
+
   <circle cx="20" cy="18" r="6.5" fill="#FF5F57"/>
   <circle cx="40" cy="18" r="6.5" fill="#FEBC2E"/>
   <circle cx="60" cy="18" r="6.5" fill="#28C840"/>
-  <text x="480" y="22" text-anchor="middle" fill="#98989d" class="mono" font-size="12">alex@dev — -zsh — 80×24</text>
+  <text x="480" y="22" text-anchor="middle" fill="#98989d" class="mono" font-size="12">alex@dev — -zsh — 100×30</text>
   <path d="M0.5 36H959.5" stroke="#3a3a3c"/>
 
-  <!-- ═══ SESSION ═══ -->
-  <!-- last login -->
   <text x="24" y="62" fill="#98989d" class="mono" font-size="14">Last login: Sun Nov 16 01:12:04 on ttys001</text>
 
-  <!-- whoami with verbose flag -->
   <text x="24" y="88" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="88" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <text x="148" y="88" fill="#f2f2f7" class="mono" font-size="15">whoami --verbose</text>
-  <text x="24" y="114" fill="#f2f2f7" class="mono" font-size="15" font-weight="700">alex_baltazar</text>
-  <text x="152" y="114" fill="#98989d" class="mono" font-size="15">·  full stack developer  ·  Bolivia 🇧🇴</text>
+  <text x="104" y="88" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <g clip-path="url(#type-fastfetch)">
+    <text x="147" y="88" fill="#f2f2f7" class="mono" font-size="15">fastfetch</text>
+  </g>
 
-  <!-- cat mission.txt -->
-  <text x="24" y="140" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="140" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <text x="148" y="140" fill="#f2f2f7" class="mono" font-size="15">cat mission.txt</text>
-  <text x="24" y="166" fill="#f2f2f7" class="mono" font-size="15">build real systems end-to-end</text>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.5s" fill="freeze"/>
+    <text x="24" y="124" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.6s" fill="freeze"/>
+    <text x="24" y="144" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#98989d">alex@dev zsh</tspan>          |</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.7s" fill="freeze"/>
+    <text x="24" y="164" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.8s" fill="freeze"/>
+    <text x="24" y="184" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#f2f2f7">$ whoami</tspan>              |</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.9s" fill="freeze"/>
+    <text x="24" y="204" fill="#48484a" class="mono" font-size="13">   | <tspan fill="#f2f2f7">alex_baltazar</tspan>         |</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.0s" fill="freeze"/>
+    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [##......]  42%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.0s"/></text>
+    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [######..]  71%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.3s"/></text>
+    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [###.....]  38%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.6s"/></text>
+    <text x="24" y="224" fill="#0a84ff" class="mono" font-size="13" opacity="0">   | load [#####...]  59%  |<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.02;0.24;0.26;1" dur="1.2s" repeatCount="indefinite" begin="2.9s"/></text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.1s" fill="freeze"/>
+    <text x="24" y="244" fill="#48484a" class="mono" font-size="13">   +-----------------------+</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.2s" fill="freeze"/>
+    <text x="24" y="264" fill="#3a3a3c" class="mono" font-size="13">  /__________________________\</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.3s" fill="freeze"/>
+    <text x="24" y="284" fill="#3a3a3c" class="mono" font-size="13"> /____________________________\</text>
+  </g>
 
-  <!-- ls -F expertise/ -->
-  <text x="24" y="192" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="192" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <text x="148" y="192" fill="#f2f2f7" class="mono" font-size="15">ls -F expertise/</text>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.5s" fill="freeze"/>
+    <text x="330" y="124" fill="#f2f2f7" class="mono" font-size="16" font-weight="700">alex_baltazar</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.6s" fill="freeze"/>
+    <text x="330" y="144" fill="#98989d" class="mono" font-size="13">full stack developer · Bolivia 🇧🇴</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.7s" fill="freeze"/>
+    <text x="330" y="164" fill="#3a3a3c" class="mono" font-size="13">──────────────────────────</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.8s" fill="freeze"/>
+    <text x="330" y="184" fill="#98989d" class="mono" font-size="13">OS</text>
+    <text x="430" y="184" fill="#f2f2f7" class="mono" font-size="13">macOS 26.2 · arm64</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="1.9s" fill="freeze"/>
+    <text x="330" y="204" fill="#98989d" class="mono" font-size="13">Host</text>
+    <text x="430" y="204" fill="#f2f2f7" class="mono" font-size="13">MacBook Pro · M4</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.0s" fill="freeze"/>
+    <text x="330" y="224" fill="#98989d" class="mono" font-size="13">Shell</text>
+    <text x="430" y="224" fill="#f2f2f7" class="mono" font-size="13">zsh 5.9</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.1s" fill="freeze"/>
+    <text x="330" y="244" fill="#98989d" class="mono" font-size="13">Uptime</text>
+    <text x="430" y="244" fill="#f2f2f7" class="mono" font-size="13">92 days, 4:12</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.2s" fill="freeze"/>
+    <text x="330" y="264" fill="#98989d" class="mono" font-size="13">Brew</text>
+    <text x="430" y="264" fill="#f2f2f7" class="mono" font-size="13">214 packages</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="2.3s" fill="freeze"/>
+    <text x="330" y="284" fill="#98989d" class="mono" font-size="13">Stack</text>
+    <text x="430" y="284" fill="#f2f2f7" class="mono" font-size="13">Next.js · NestJS · Laravel · Flutter</text>
+  </g>
 
-  <text x="24" y="218" fill="#0a84ff" class="mono" font-size="15" font-weight="700">fullstack/</text>
-  <text x="140" y="218" fill="#98989d" class="mono" font-size="15">Next.js · NestJS · Laravel · Django</text>
+  <text x="24" y="316" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="316" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <g clip-path="url(#type-mission)">
+    <text x="147" y="316" fill="#f2f2f7" class="mono" font-size="15">cat mission.txt</text>
+  </g>
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;1" dur="0.18s" begin="3.4s" fill="freeze"/>
+    <text x="24" y="342" fill="#f2f2f7" class="mono" font-size="15">build real systems end-to-end</text>
+  </g>
 
-  <text x="24" y="244" fill="#0a84ff" class="mono" font-size="15" font-weight="700">mobile/</text>
-  <text x="140" y="244" fill="#98989d" class="mono" font-size="15">Flutter · Dart</text>
-
-  <text x="24" y="270" fill="#0a84ff" class="mono" font-size="15" font-weight="700">learning/</text>
-  <text x="140" y="270" fill="#98989d" class="mono" font-size="15">DevOps · Cloud · AWS · GCP</text>
-
-  <!-- uptime -->
-  <text x="24" y="296" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="296" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <text x="148" y="296" fill="#f2f2f7" class="mono" font-size="15">uptime</text>
-  <text x="24" y="322" fill="#98989d" class="mono" font-size="15">14:32  up 92 days,  4:12,  2 users,  load averages: 0.42 0.38 0.31</text>
-
-  <!-- idle prompt + block cursor -->
-  <text x="24" y="348" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
-  <text x="104" y="348" fill="#98989d" class="mono" font-size="15">~ %</text>
-  <rect x="148" y="334" width="9" height="18" fill="#0a84ff" class="cursor-blink"/>
+  <text x="24" y="368" fill="#0a84ff" class="mono" font-size="15" font-weight="700">alex@dev</text>
+  <text x="104" y="368" fill="#98989d" class="mono" font-size="15">~ %</text>
+  <rect x="147" y="354" width="9" height="18" fill="#0a84ff" class="cursor-blink"/>
 </svg>
